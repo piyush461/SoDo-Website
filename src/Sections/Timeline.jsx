@@ -37,29 +37,42 @@ const Timeline = () => {
         </div>
         <div className="mt-52">
           <Card>
-            <div className="flex flex-col gap-9 p-7">
-              <div className="flex gap-24">
-                <h2 className="text-[18px] font-[500] font-poppins text-nowrap">
-                  Product Designer
-                </h2>
-                <div className="flex gap-2">
-                  <div className="text-[11px] font-roboto border-[1px] border-[#00ffff61] px-2 py-[2px] h-fit text-nowrap rounded-[50px] ">
-                    remote
-                  </div>
-                  <div className="text-[11px] font-roboto border-[1px] border-[#00ffff61] px-2 py-[2px] h-fit text-nowrap rounded-[50px] ">
-                    contract
-                  </div>
-                  <div className="text-[11px] font-roboto border-[1px] border-[#00ffff61] px-2 py-[2px] h-fit text-nowrap rounded-[50px] ">
-                    full-time
-                  </div>
+            <div className="flex justify-between p-4 m-4 border-2 border-[#E8E6FF] rounded-[20px] gap-24">
+              <div className="flex gap-2">
+                <div>
+                  <img className="h-14" src="Images/jasmine.jpg" alt="" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[15px] font-poppins">
+                    Jasmine Taylor
+                  </h4>
+                  <h4 className="font-roboto text-[11.5px]">
+                    Product Designer
+                  </h4>
                 </div>
               </div>
-              <div className="flex flex-wrap w-[90%]">
-                <Badge text="User Interface Design" color="#e6f0ff" />
-                <Badge text="Visual Communication" color="#e6f0ff" />
-                <Badge text="Digital Artwork" color="#e6f0ff" />
-                <Badge text="Brand Identity Design" color="#e6f0ff" />
-                <Badge text="Motion Graphics Production" color="#e6f0ff" />
+              <div className="text-[11px] font-roboto bg-[#E8E6FF] h-fit px-2 py-1 rounded-[30px]">
+                {" "}
+                <span className="font-semibold pr-1">90%</span>match
+              </div>
+            </div>
+            <div className="flex justify-between p-4 gap-24 m-4 border-2 border-[#E8E6FF] rounded-[20px]">
+              <div className="flex gap-2">
+                <div>
+                  <img src="Images/jordon.svg" alt="" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[15px] font-poppins">
+                    Jordan Blake
+                  </h4>
+                  <h4 className="font-roboto text-[11.5px]">
+                    User Experience designer
+                  </h4>
+                </div>
+              </div>
+              <div className="text-[11px] font-roboto bg-[#E8E6FF] h-fit px-2 py-1 rounded-[30px]">
+                {" "}
+                <span className="font-semibold pr-1">85%</span>match
               </div>
             </div>
           </Card>
@@ -156,7 +169,7 @@ const Timeline = () => {
         <div className="flex mt-[270px] justify-center h-56 gap-3">
           <Card>
             <div className="flex flex-col items-center h-60 p-5 px-[27px]">
-              <img className="h-[86px]" src="Images/jasmine.svg" alt="" />
+              <img className="h-[86px]" src="Images/jasmine.jpg" alt="" />
               <h1 className="font-poppins text-lg mt-2 font-bold">
                 Jasmine Taylor
               </h1>

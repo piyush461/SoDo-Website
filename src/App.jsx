@@ -1,5 +1,3 @@
-import Step from "./Components/Step"
-import TestimonialCard from "./Components/TestimonialCard"
 import ContactUs from "./Sections/ContactUs"
 import Faq from "./Sections/Faq"
 import Footer from "./Sections/Footer"

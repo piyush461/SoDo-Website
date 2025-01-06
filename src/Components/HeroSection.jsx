@@ -1,4 +1,3 @@
-import "../../public/Fonts/Font.css";
 import Button from "./Button";
 const HeroSection = () => {
   return (
@@ -68,7 +67,7 @@ const HeroSection = () => {
             src="Images\star.svg"
             alt=""
           />
-          <img className="h-[95vh] w-auto" src="Images\hero.svg" alt="" />
+          <img className="h-[95vh] w-auto" src="Images\hero.jpg" alt="" />
           <div className="absolute -left-28 bottom-24">
             <img
               className="h-40 w-auto"

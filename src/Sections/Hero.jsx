@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div>
       <Header />
-      <HeroSection />
+      <HeroSection/>
     </div>
   );
 };

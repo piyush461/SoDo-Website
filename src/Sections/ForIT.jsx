@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 const ForIT = () => {
   const itRef = useRef(null);
@@ -94,7 +94,7 @@ const ForIT = () => {
         </div>
       </div>
       <div className="h-[98vh]">
-        <img className="h-[100%] w-auto" src="Images/forIT.svg" alt="" />
+        <img className="h-[100%] w-auto" src="Images/forIT.jpg" alt="" />
       </div>
     </div>
   );
