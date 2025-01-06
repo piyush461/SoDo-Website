@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Roboto;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%% HEADER SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.navs {
+  position: relative;
+  cursor: pointer;
+}
+
+.navs::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  height: 2px;
+  opacity: 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 2%,
+    #f1ff00,
+    #ffd300,
+    #ffa61f,
+    #ff7a42,
+    #ff545c,
+    #f6396b,
+    #e61c7b,
+    #d1008b,
+    #c5009d,
+    #b100b2,
+    #9000c8,
+    #5613e0
+  );
+  z-index: -1;
+}
+
+.navs:hover::before {
+  animation: navCol 1s ease forwards;
+}
+
+@keyframes navCol {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%% HERO SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
+
+.heroHead {
+  font-size: 4rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #fb8b40, #8840fb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hireTalent {
+  position: relative;
+  border-radius: 14px;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.hireTalent::after,
+.hireTalent::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    #6a9cee,
+    #8840fb,
+    #fb8b40
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 14px;
+  padding: 26px 66px;
+  opacity: 0;
+}
+
+.hireTalent:hover::before,
+.hireTalent:hover::after {
+  opacity: 100;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* %%%%%%%%%%%%%%%%% WHAT WE DO DIFFERENTLY SECTION %%%%%%%%%%%%%%%%%%%%%%% */
+
+
+.thCard {
+  position: relative;
+  background-color: white;
+}
+
+.thCard::before {
+  content: "";
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  background-image: conic-gradient(
+    from -80deg,
+    rgb(255, 179, 37),
+    rgb(66, 141, 239),
+    rgb(103, 103, 255),
+    rgb(255, 179, 37) 90%
+  );
+  border-radius: 18px;
+}
+
+.thHr {
+  background: rgb(180, 72, 58);
+  background: linear-gradient(
+    34deg,
+    rgba(180, 72, 58, 1) 0%,
+    rgba(253, 194, 29, 0.9305847338935574) 50%,
+    rgba(69, 73, 252, 1) 100%
+  );
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%% OUR SERVICE SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.serviceCard {
+  position: relative;
+  background-color: white;
+}
+
+.serviceCard::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  z-index: -1;
+  background-image: conic-gradient(from -90deg, orange, #3471fc, orange);
+}
+
+
+
+.coverCard {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%% TIMELINE SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
+
+.ball, .line {
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%% TESTIMONIAL SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
+
+.testimonialCard {
+  background-color: white;
+}
+
+.gradientBorder {
+  background-image: linear-gradient(to right, #fb8b40, #8840fb);
+}
+
+.bordergradient {
+  position: absolute;
+  opacity: 0.9;
+  transition: all 0.6s ease, opacity 0.6s ease;
+}
+
+.bordergradient:nth-child(1) {
+  top: 100px;
+  left: 100px;
+  transform: rotateZ(-3deg);
+}
+
+.bordergradient:nth-child(2) {
+  left: 350px;
+  transform: rotateZ(-8deg);
+  z-index: 80;
+}
+
+.bordergradient:nth-child(3) {
+  right: 80px;
+  transform: rotateZ(20deg);
+}
+
+.bordergradient:nth-child(4) {
+  left: 200px;
+  top: 200px;
+  z-index: 60;
+}
+
+.bordergradient:nth-child(5) {
+  top: 170px;
+  left: 500px;
+  transform: rotateZ(17deg);
+  z-index: 70;
+}
+.bordergradient:nth-child(6) {
+  top: 230px;
+  right: 140px;
+  transform: rotateZ(3deg);
+  z-index: 50;
+}
+
+.testimonialsContainer:hover .bordergradient:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  transform: rotate(0deg);
+}
+
+.testimonialsContainer:hover .bordergradient:nth-child(2) {
+  left: 380px;
+  top: -45px;
+  transform: rotate(0deg);
+}
+.testimonialsContainer:hover .bordergradient:nth-child(3) {
+  right: 5px;
+  top: 7px;
+  transform: rotate(0deg);
+}
+.testimonialsContainer:hover .bordergradient:nth-child(4) {
+  top: 288px;
+  left: 0px;
+  transform: rotate(0deg);
+}
+.testimonialsContainer:hover .bordergradient:nth-child(5) {
+  left: 380px;
+  top: 270px;
+  transform: rotate(0deg);
+}
+.testimonialsContainer:hover .bordergradient:nth-child(6) {
+  right: 5px;
+  top: 300px;
+  transform: rotate(0deg);
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%% OUR MODELS SECTION %%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.ourModelsBlack,
+.ourModelsWhite {
+  transition: all 0.2s ease;
+}
+
+.ourModelsBlack {
+  background-color: black;
+}
+
+.ourModelsBlack h1,
+.ourModelsBlack h4 {
+  color: white;
+}
+
+.ourModelsBlack button {
+  color: black;
+  background-color: white;
+}
+
+.ourModelsWhite {
+  background: linear-gradient(to bottom, #e0dff8 50%, white 100%);
+}
+
+.ourModelsWhite h1,
+.ourModelsWhite h4 {
+  color: black;
+}
+
+.ourModelsWhite button {
+  color: white;
+  background-color: black;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%% FAQ SECTION %%%%%%%%%%%%%%%%%%%%%%% */
+
+.faqBorder {
+  background-color: #e6f0ff;
+  transition: all 0.4s ease;
+}
+
+.faqBorder:hover {
+  background-image: linear-gradient(to right, #fb8b40, #8840fb);
+}
+.faqactive
+{
+  background-image: linear-gradient(to right, #fb8b40, #8840fb);
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%% CONTACT US SECTION %%%%%%%%%%%%%%%%%%%%%%% */
+
+.contactForm{
+  box-shadow: rgba(121, 165, 247, 0.758) 0px 2px 8px 0px;
+}

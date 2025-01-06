@@ -1,0 +1,19 @@
+const TestimonialCard = ({ id, desc, imgUrl, name, company }) => {
+  return (
+    <div className="testimonialCard p-6 py-8 rounded-2xl before:rounded-2xl w-[350px] flex flex-col justify-between">
+      <div className="mb-4">
+        <img src="Images/quote.svg" alt="Quote" className="w-8 h-8" />
+      </div>
+      <h2>{desc}</h2>
+      <div className="flex items-center mt-4">
+        <img src={imgUrl} alt={name} className="w-10 h-10 rounded-full" />
+        <div className="ml-4">
+          <h1 className="font-poppins font-semibold">{name}</h1>
+          <h3 className="text-xs text-[#464454]">{company}</h3>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TestimonialCard;
