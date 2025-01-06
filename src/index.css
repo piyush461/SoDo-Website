@@ -356,7 +356,10 @@ body {
   background-image: conic-gradient(from -90deg, orange, #3471fc, orange);
 }
 
-
+.learnMore:hover img{
+  transform: translateX(10px);
+  transition: .5s ease ;
+}
 
 .coverCard {
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,

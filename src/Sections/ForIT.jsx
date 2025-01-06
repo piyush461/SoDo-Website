@@ -87,9 +87,9 @@ const ForIT = () => {
           </h3>
         </div>
         <div>
-          <button className="flex items-center border mb-6 font-semibold px-6 py-3 rounded-2xl hover:text-black hover:gap-2 ">
+          <button className="learnMore flex items-center border mb-6 font-semibold px-6 py-3 rounded-2xl hover:text-black">
             Learn More
-            <img src="Images/rightArrow.svg" alt="" />
+            <img src="Images/rightArrow.svg" alt=""/>
           </button>
         </div>
       </div>
