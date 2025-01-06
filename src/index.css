@@ -424,7 +424,7 @@ body {
 }
 
 .bordergradient:nth-child(3) {
-  right: 80px;
+  left: 695px;
   transform: rotateZ(20deg);
 }
 
@@ -442,7 +442,7 @@ body {
 }
 .bordergradient:nth-child(6) {
   top: 230px;
-  right: 140px;
+  left: 761px;
   transform: rotateZ(3deg);
   z-index: 50;
 }
@@ -459,7 +459,7 @@ body {
   transform: rotate(0deg);
 }
 .testimonialsContainer:hover .bordergradient:nth-child(3) {
-  right: 5px;
+  left: 762px;
   top: 7px;
   transform: rotate(0deg);
 }
@@ -474,7 +474,7 @@ body {
   transform: rotate(0deg);
 }
 .testimonialsContainer:hover .bordergradient:nth-child(6) {
-  right: 5px;
+  left: 762px;
   top: 300px;
   transform: rotate(0deg);
 }

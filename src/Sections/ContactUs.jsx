@@ -36,7 +36,13 @@ const ContactUs = () => {
 
   return (
     <div id="contact" className="mt-24 h-auto flex justify-between">
-      <ToastContainer
+      <div className="w-[35%] mt-4">
+        <Heading head="Contact us today" />
+        <h3>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius sint at
+          accusamus, quasi deserunt maiores.
+        </h3>
+        <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -49,12 +55,6 @@ const ContactUs = () => {
         theme="light"
         transition={Bounce}
       />
-      <div className="w-[35%]">
-        <Heading head="Contact us today" />
-        <h3>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius sint at
-          accusamus, quasi deserunt maiores.
-        </h3>
       </div>
       <div className="contactForm h-fit mt-4 border w-[50vw] p-9 rounded-[30px]">
         <form ref={form} onSubmit={submitHandler}>

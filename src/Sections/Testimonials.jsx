@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <div className="text-center mt-20">
       <Heading head="What they say about us" />
-      <div className="testimonialsContainer hoverDiv text-left mt-14 relative h-[600px]">
+      <div className="testimonialsContainer hoverDiv text-left mt-14 relative h-[600px] border">
         {testimonialsData.testimonials.map((testimonial, index) => (
           <div
             key={index}
