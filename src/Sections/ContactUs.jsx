@@ -35,7 +35,7 @@ const ContactUs = () => {
       };
 
   return (
-    <div className="mt-24 h-auto flex justify-between">
+    <div id="contact" className="mt-24 h-auto flex justify-between">
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -56,7 +56,7 @@ const ContactUs = () => {
           accusamus, quasi deserunt maiores.
         </h3>
       </div>
-      <div className="contactForm h-[94vh] mt-4 border w-[50vw] p-9 rounded-[30px]">
+      <div className="contactForm h-fit mt-4 border w-[50vw] p-9 rounded-[30px]">
         <form ref={form} onSubmit={submitHandler}>
           <div className="h-[100%]  w-[100%] flex flex-col gap-6">
             <div className="flex flex-wrap gap-8">
@@ -118,7 +118,7 @@ const ContactUs = () => {
                 />
               </div>
             </div>
-            <div>
+            <div className="">
               <label className="text-lg ml-4 block">Message</label>
               <textarea
                 name={message}

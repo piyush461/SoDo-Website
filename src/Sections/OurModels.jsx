@@ -6,11 +6,10 @@ const OurModels = () => {
 
   return (
     <div className="h-[100vh]">
-      <div className="text-center">
+      <div className="text-center text-nowrap">
         <Heading head="Our Models" />
       </div>
       <div className="flex justify-center gap-6 pt-10">
-        {/* Left Card (Black Default) */}
         <div className="gradientBorder w-fit p-[3px] rounded-2xl">
           <div
             className={`${
@@ -18,7 +17,7 @@ const OurModels = () => {
             } rounded-2xl text-white p-6 flex flex-col justify-between gap-10`}
           >
             <div>
-              <h1 className="text-3xl font-poppins font-[500] pb-3">
+              <h1 className="text-3xl font-poppins font-[500] pb-3 text-nowrap">
                 HRaaS & IT Recruitment
               </h1>
               <h3
@@ -66,7 +65,7 @@ const OurModels = () => {
           </div>
         </div>
         <div
-          className="gradientBorder w-fit p-[3px] rounded-2xl"
+          className="gradientBorder w-fit p-[3px] rounded-2xl h-[100%]"
           onMouseEnter={() => setHoveredSecond(true)}
           onMouseLeave={() => setHoveredSecond(false)}
         >
@@ -81,13 +80,13 @@ const OurModels = () => {
               </h1>
               <h3
                 className={`${
-                  hoveredSecond ? "text-white" : "text-black"
+                  hoveredSecond ? "text-white" : "text-black text-nowrap"
                 } font-[400] text-sm text-wrap`}
               >
                 Flexible IT staffing designed to meet your business&apos;s <br /> unique requirements.
               </h3>
             </div>
-            <div className="text-xs font-roboto text-[#464454]">
+            <div className="text-xs font-roboto text-[#464454] text-nowrap">
               <h4 className="flex gap-1">
                 <img src="Images/tick.svg" alt="" />
                 Flexible Options: Full-time or part-time staffing

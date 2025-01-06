@@ -285,8 +285,8 @@ body {
   opacity: 0;
 }
 
-.hireTalent:hover::before,
-.hireTalent:hover::after {
+.hireTalent::before,
+.hireTalentafter {
   opacity: 100;
   animation: spin 3s linear infinite;
 }
@@ -366,6 +366,24 @@ body {
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
+/* %%%%%%%%%%%%%%%%%%%%%%%% FOR IT STARTUPS MNCS SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
+
+.rotateBall {
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 /* %%%%%%%%%%%%%%%%%%%%%%%% TIMELINE SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
 
 .ball, .line {
@@ -376,6 +394,7 @@ body {
 /* %%%%%%%%%%%%%%%%%%%%% TESTIMONIAL SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
 
 .testimonialCard {
+  position: relative;
   background-color: white;
 }
 

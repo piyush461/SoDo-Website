@@ -26,7 +26,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-start mt-28 w-full gap-9">
+    <div id="timeline" className="pt-20 flex justify-center items-start mt-28 w-full gap-9">
       <div className="flex flex-col">
         <div>
           <Step
@@ -89,13 +89,13 @@ const Timeline = () => {
         <div>
           <img
             className="ball opacity-20"
-            src="Images/timelineball.svg"
+            src="Images/graBall.svg"
             alt=""
           />
         </div>
         <div>
           <img
-            className="h-[250px] line opacity-20"
+            className="h-[250px] line opacity-20 rotate-180"
             src="Images/timelineHr.svg"
             alt=""
           />
@@ -103,13 +103,13 @@ const Timeline = () => {
         <div>
           <img
             className="mt-1 opacity-20 ball"
-            src="Images/timelineball.svg"
+            src="Images/graBall.svg"
             alt=""
           />
         </div>
         <div>
           <img
-            className="mt-1 h-[355px] opacity-20 line"
+            className="mt-1 h-[355px] opacity-20 line rotate-180"
             src="Images/timelineHr.svg"
             alt=""
           />
@@ -117,13 +117,13 @@ const Timeline = () => {
         <div>
           <img
             className="mt-1 opacity-20 ball"
-            src="Images/timelineball.svg"
+            src="Images/graBall.svg"
             alt=""
           />
         </div>
         <div>
           <img
-            className="mt-1 opacity-20 line"
+            className="mt-1 h-76 opacity-20 line rotate-180"
             src="Images/timelineHr.svg"
             alt=""
           />

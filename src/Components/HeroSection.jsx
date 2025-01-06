@@ -43,7 +43,7 @@ const HeroSection = () => {
             We connect businesses with <br /> multi-layered vetted and <br /> screened
             talent and <br /> resources
           </h3>
-          <Button content="Hire Talent" />
+          <a href="#contact"><Button content="Hire Talent" /></a>
         </div>
         <div className="flex gap-10 mt-16">
           <div>

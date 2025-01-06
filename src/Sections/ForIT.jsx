@@ -31,7 +31,7 @@ const ForIT = () => {
   };
 
   return (
-    <div className="flex justify-between w-full mt-10">
+    <div id='forIT' className="flex justify-between w-full mt-10">
       <div className="flex flex-col justify-between">
         <div>
           <h3
@@ -41,10 +41,10 @@ const ForIT = () => {
             onMouseLeave={handleMouseLeave}
           >
             For IT Companies
-            <div>
+            <div className="pl-4 pt-2">
               <img
                 ref={gradball1Ref}
-                className="pl-4 absolute top-[35%]"
+                className='rotateBall'
                 src="Images/graBall.svg"
                 alt=""
                 style={{ opacity: 1 }}
@@ -58,10 +58,10 @@ const ForIT = () => {
             onMouseLeave={handleMouseLeave}
           >
             For Startups
-            <div>
+            <div className="pl-4 pt-2">
               <img
                 ref={gradball2Ref}
-                className="pl-4"
+                className="rotateBall"
                 src="Images/graBall.svg"
                 alt=""
                 style={{ opacity: 0 }}
@@ -75,10 +75,10 @@ const ForIT = () => {
             onMouseLeave={handleMouseLeave}
           >
             For MNCs
-            <div>
+            <div className="pl-4 pt">
               <img
                 ref={gradball3Ref}
-                className="pl-4"
+                className="rotateBall"
                 src="Images/graBall.svg"
                 alt=""
                 style={{ opacity: 0 }}

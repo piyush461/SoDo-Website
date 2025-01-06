@@ -7,7 +7,7 @@ const OurServices = () => {
   const staffingDesc =
     "Need to scale? Whether for a sprint or a marathon resource augmentation solution flexes with you. All top talent to your team for as long as you need - no long-term contracts required";
   return (
-    <div className="mt-24">
+    <div id="ourServices" className="mt-24">
       <Heading head="Our Services" />
       <div className="mt-10">
         <div className="serviceCard w-full h-[82vh] rounded-[40px] before:rounded-[40px] flex justify-between items-center p-16">
