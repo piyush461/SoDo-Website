@@ -1,4 +1,4 @@
-import Badge from "../Components/badge";
+import Badge from "../Components/Badge";
 import Card from "../Components/Card";
 import Heading from "../Components/Heading";
 
