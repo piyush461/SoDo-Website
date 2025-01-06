@@ -36,7 +36,7 @@ const ForIT = () => {
         <div>
           <h3
             ref={itRef}
-            className="cursor-pointer font-poppins text-[45px] font-semibold flex items-center relative text-black"
+            className="cursor-pointer font-poppins text-[2.8rem] font-semibold flex items-center relative text-black"
             onMouseEnter={() => handleMouseEnter(itRef, gradball1Ref)}
             onMouseLeave={handleMouseLeave}
           >
@@ -53,7 +53,7 @@ const ForIT = () => {
           </h3>
           <h3
             ref={startupRef}
-            className="cursor-pointer font-poppins text-[#464454] text-[45px] font-semibold flex items-center"
+            className="cursor-pointer font-poppins text-[#464454] text-[2.8rem] font-semibold flex items-center"
             onMouseEnter={() => handleMouseEnter(startupRef, gradball2Ref, true)}
             onMouseLeave={handleMouseLeave}
           >
@@ -70,7 +70,7 @@ const ForIT = () => {
           </h3>
           <h3
             ref={mncsRef}
-            className="cursor-pointer font-poppins text-[#464454] text-[45px] font-semibold flex items-center"
+            className="cursor-pointer font-poppins text-[#464454] text-[2.8rem] font-semibold flex items-center"
             onMouseEnter={() => handleMouseEnter(mncsRef, gradball3Ref, true)}
             onMouseLeave={handleMouseLeave}
           >

@@ -109,7 +109,7 @@ const Timeline = () => {
         </div>
         <div>
           <img
-            className="mt-1 h-[355px] opacity-20 line rotate-180"
+            className="mt-1 h-[362px] opacity-20 line rotate-180"
             src="Images/timelineHr.svg"
             alt=""
           />
