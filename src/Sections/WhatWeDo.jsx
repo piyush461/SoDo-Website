@@ -10,7 +10,7 @@ const WhatWeDo = () => {
     <div className="relative">
       <img className="absolute -left-40 top-20 scale-125 w-[50vw] -z-10" src="Images/yellowEllipse.svg" alt="" />
       <img className="absolute -right-40 top-40 h-[650px] w-[650px] -z-10" src="Images/blueEllipse.svg" alt="" />
-      <img className="absolute rotate-90 left-40 top-80 scale-125 w-[50vw] -z-10" src="Images/blueEllipse.svg" alt="" />
+      <img className="absolute rotate-90 opacity-50 left-40 top-80 scale-125 w-[50vw] -z-10" src="Images/blueEllipse.svg" alt="" />
       <Heading head="What we do differently" />
       <div className="flex justify-between mt-8">
         <div className="thCard h-[325px] w-[352px] flex flex-col justify-between rounded-2xl p-6 pt-8 font-poppins">
