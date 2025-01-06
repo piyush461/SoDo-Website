@@ -1,6 +1,4 @@
 import { useRef, useState } from "react";
-import Button from "../Components/Button";
-import Card from "../Components/Card";
 import Heading from "../Components/Heading";
 import emailjs from "@emailjs/browser";
 import { ToastContainer , Bounce, toast} from "react-toastify";

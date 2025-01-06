@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Step from "../Components/Step";
 import Card from "../Components/Card";
-import Badge from "../Components/badge";
+import Badge from "../Components/Badge";
 
 const Timeline = () => {
   useEffect(() => {
