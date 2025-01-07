@@ -5,7 +5,7 @@ const OurModels = () => {
   const [hoveredSecond, setHoveredSecond] = useState(false);
 
   return (
-    <div className="h-[100vh]">
+    <div className="">
       <div className="text-center text-nowrap">
         <Heading head="Our Models" />
       </div>

@@ -31,17 +31,17 @@ const ForIT = () => {
   };
 
   return (
-    <div id='forIT' className="flex justify-between w-full mt-10">
+    <div id='forIT' className="flex justify-between gap-4 w-full mt-10">
       <div className="flex flex-col justify-between">
         <div>
           <h3
             ref={itRef}
-            className="cursor-pointer font-poppins text-[2.8rem] font-semibold flex items-center relative text-black"
+            className="cursor-pointer font-poppins text-[2.7rem] font-semibold flex items-center text-nowrap relative text-black"
             onMouseEnter={() => handleMouseEnter(itRef, gradball1Ref)}
             onMouseLeave={handleMouseLeave}
           >
             For IT Companies
-            <div className="pl-4 pt-2">
+            <div className="pl-3 pt-2">
               <img
                 ref={gradball1Ref}
                 className='rotateBall'
@@ -53,12 +53,12 @@ const ForIT = () => {
           </h3>
           <h3
             ref={startupRef}
-            className="cursor-pointer font-poppins text-[#464454] text-[2.8rem] font-semibold flex items-center"
+            className="cursor-pointer font-poppins text-[#464454] text-[2.7rem] font-semibold flex items-center"
             onMouseEnter={() => handleMouseEnter(startupRef, gradball2Ref, true)}
             onMouseLeave={handleMouseLeave}
           >
             For Startups
-            <div className="pl-4 pt-2">
+            <div className="pl-3 pt-2">
               <img
                 ref={gradball2Ref}
                 className="rotateBall"
@@ -70,12 +70,12 @@ const ForIT = () => {
           </h3>
           <h3
             ref={mncsRef}
-            className="cursor-pointer font-poppins text-[#464454] text-[2.8rem] font-semibold flex items-center"
+            className="cursor-pointer font-poppins text-[#464454] text-[2.7rem] font-semibold flex items-center"
             onMouseEnter={() => handleMouseEnter(mncsRef, gradball3Ref, true)}
             onMouseLeave={handleMouseLeave}
           >
             For MNCs
-            <div className="pl-4 pt">
+            <div className="pl-3 pt">
               <img
                 ref={gradball3Ref}
                 className="rotateBall"
@@ -93,8 +93,8 @@ const ForIT = () => {
           </button>
         </div>
       </div>
-      <div className="h-[98vh]">
-        <img className="h-[100%] w-auto" src="Images/forIT.jpg" alt="" />
+      <div>
+        <img className="h-[38vw] w-auto" src="Images/forIT.jpg" alt="" />
       </div>
     </div>
   );

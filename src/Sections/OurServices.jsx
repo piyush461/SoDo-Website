@@ -10,7 +10,7 @@ const OurServices = () => {
     <div id="ourServices" className="mt-24">
       <Heading head="Our Services" />
       <div className="mt-10">
-        <div className="serviceCard w-full h-[82vh] rounded-[40px] before:rounded-[40px] flex justify-between items-center p-16">
+        <div className="serviceCard w-full rounded-[40px] before:rounded-[40px] flex justify-between items-center p-16">
           <div className=" w-[45%] flex flex-col justify-between gap-6 ">
             <h3 className="font-poppins font-semibold text-3xl">Recruitment</h3>
             <p className="font-roboto text-lg">{recruitmentDesc}</p>
@@ -20,7 +20,7 @@ const OurServices = () => {
             <img src="Images/recruitment.jpg" alt="" />
           </div>
         </div>
-        <div className="serviceCard before:rounded-[40px] w-full h-[82vh] rounded-[40px] flex justify-between items-center p-16 mt-8">
+        <div className="serviceCard before:rounded-[40px] w-full rounded-[40px] flex justify-between items-center p-16 mt-8">
           <div>
             <img src="Images/staffing.jpg" alt="" />
           </div>

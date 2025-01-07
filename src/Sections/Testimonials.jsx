@@ -6,20 +6,21 @@ const Testimonials = () => {
   return (
     <div className="text-center mt-20">
       <Heading head="What they say about us" />
-      <div className="testimonialsContainer hoverDiv text-left mt-14 relative h-[600px] border">
-        {testimonialsData.testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="bordergradient gradientBorder w-fit p-[2px] rounded-2xl"
-          >
-            <TestimonialCard
-              desc={testimonial.desc}
-              imgUrl={testimonial.imgUrl}
-              name={testimonial.name}
-              company={testimonial.company}
-            />
-          </div>
-        ))}
+      <div className="testimonialsContainer hoverDiv text-left mt-14 h-[600px] flex justify-center items-center">
+        <div className="relative h-80 w-80">
+          {testimonialsData.testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bordergradient gradientBorder w-fit p-[2px] rounded-2xl">
+              <TestimonialCard
+                desc={testimonial.desc}
+                imgUrl={testimonial.imgUrl}
+                name={testimonial.name}
+                company={testimonial.company}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

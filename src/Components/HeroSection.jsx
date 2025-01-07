@@ -29,17 +29,17 @@ const HeroSection = () => {
                 alt=""
               />
             </div>
-            <h4 className="font-archivo tracking-tighter pl-20  text-[14px] text-gray-400 font-medium ">
+            <h4 className="font-archivo tracking-tighter pl-20  text-[14px] text-gray-400 font-medium text-nowrap">
               trusted by 120+ companies
             </h4>
           </div>
           <div className="poppins-semibold pt-6">
-            <h1 className="text-6xl font-semibold ">Unlock the Top</h1>
-            <span className="heroHead text-6xl leading-relaxed ">
+            <h1 className="text-[5.3vw] font-semibold ">Unlock the Top</h1>
+            <span className="heroHead text-[5.3vw] leading-relaxed text-nowrap">
               1% of IT Talent
             </span>
           </div>
-          <h3 className="font-roboto font-light text-2xl mb-10">
+          <h3 className="font-roboto font-light text-[1.6vw] mb-10">
             We connect businesses with <br /> multi-layered vetted and <br /> screened
             talent and <br /> resources
           </h3>
@@ -67,7 +67,7 @@ const HeroSection = () => {
             src="Images\star.svg"
             alt=""
           />
-          <img className="h-[95vh] w-auto" src="Images\hero.jpg" alt="" />
+          <img className="scale-[.97] w-auto" src="Images\hero.jpg" alt="" />
           <div className="absolute -left-28 bottom-24">
             <img
               className="h-40 w-auto"

@@ -1,7 +1,7 @@
 const TestimonialCard = ({ id, desc, imgUrl, name, company }) => {
   return (
-    <div className="testimonialCard p-6 py-8 rounded-2xl before:rounded-2xl w-[350px] flex flex-col justify-between">
-      <div className="mb-4">
+    <div className="testimonialCard p-6 pt-4 pb-6 rounded-2xl before:rounded-2xl w-[26vw] h-fit flex flex-col justify-between">
+      <div className="mb-2">
         <img src="Images/quote.svg" alt="Quote" className="w-8 h-8" />
       </div>
       <h2>{desc}</h2>
