@@ -6,9 +6,9 @@ const WhatWeCover = () => {
   return (
     <div className="mt-10">
       <Heading head="What we cover" />
-      <div className="mt-6 flex gap-7">
+      <div className="mt-6 flex gap-7 flex-shrink-0 w-full">
         <Card>
-          <div className="h-80 w-[28vw] flex flex-col justify-between  p-6">
+          <div className="h-80 w-[100%] flex flex-col justify-between  p-6">
             <div>
               <img src="Images/cover1.svg" alt="" />
             </div>
@@ -25,7 +25,7 @@ const WhatWeCover = () => {
           </div>
         </Card>
         <Card>
-          <div className="h-80 w-[28vw] flex flex-col justify-between p-6">
+          <div className="h-80 w-[100%] flex flex-col justify-between p-6">
             <div>
               <img src="Images/cover2.svg" alt="" />
             </div>
@@ -45,7 +45,7 @@ const WhatWeCover = () => {
           </div>
         </Card>
         <Card>
-          <div className="h-80 w-[28vw] flex flex-col justify-between p-6">
+          <div className="h-80 w-[100%] flex flex-col justify-between p-6">
             <div>
               <img src="Images/cover3.svg" alt="" />
             </div>

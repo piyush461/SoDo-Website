@@ -1,8 +1,7 @@
 import Heading from "../Components/Heading";
 
 const WhatWeDo = () => {
-  const cardCaption1 =
-    "Access top professionals vetted through a rigorous process.";
+  const cardCaption1 = "Access top professionals vetted through a rigorous process.";
   const cardCaption2 = "Get guidance from onboarding to project completion.";
   const cardCaption3 =
     "Connect with verified candidates and speed up recruitment.";
@@ -12,7 +11,7 @@ const WhatWeDo = () => {
       <img className="absolute -right-40 top-40 h-[650px] w-[650px] -z-10" src="Images/blueEllipse.svg" alt="" />
       <img className="absolute rotate-90 opacity-50 left-40 top-80 scale-125 w-[50vw] -z-10" src="Images/blueEllipse.svg" alt="" />
       <Heading head="What we do differently" />
-      <div className="flex justify-between border-2 gap-4 mt-8">
+      <div className="flex justify-between gap-4 mt-8">
         <div className="thCard h-[325px] w-1/3 flex flex-col justify-between rounded-2xl p-6 pt-8 font-poppins">
           <h3>
             <sub className="text-[14px]">top</sub>

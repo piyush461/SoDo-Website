@@ -11,16 +11,24 @@ const Footer = () => {
           </div>
           <div className="flex gap-2">
             <div>
-              <img src="Images/linkedIn.svg" alt="" />
+              <a href="https://www.linkedin.com/company/sodohire" target="_blank">
+                <img src="Images/linkedIn.svg" alt="" />
+              </a>
             </div>
             <div>
-              <img src="Images/fb.svg" alt="" />
+              <a href="https://www.instagram.com/sodohire" target="_blank">
+                <img src="Images/fb.svg" alt="" />
+              </a>
             </div>
             <div>
-              <img src="Images/instagram.svg" alt="" />
+              <a href="https://www.facebook.com/sodorecruit/" target="_blank">
+                <img src="Images/instagram.svg" alt="" />
+              </a>
             </div>
             <div>
-              <img src="Images/x.png" alt="X" />
+              <a href="https://x.com/SoDoHire" target="_blank">
+                <img src="Images/x.png" alt="X" />
+              </a>
             </div>
           </div>
         </div>

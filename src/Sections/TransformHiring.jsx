@@ -7,7 +7,7 @@ const TransformHiring = () => {
         <div className="flex justify-between gap-8">
             <div className="thHr h-[1px] w-full mt-6"></div>
           <img
-            className="h-[47px] mb-8" 
+            className="h-[3.7vw] mb-8" 
             src="Images/transformHiring.svg"
             alt=""
           />
@@ -16,7 +16,7 @@ const TransformHiring = () => {
             <div className="w-[100%] h-80">
             </div>
             <div className="w-[100%]">
-            <h2 className="font-roboto text-2xl">{desc}</h2>
+            <h2 className="font-roboto text-[2vw]">{desc}</h2>
             </div>
         </div>
       </div>

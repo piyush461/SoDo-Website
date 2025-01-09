@@ -63,11 +63,11 @@ const HeroSection = () => {
       <div className="flex">
         <div className="relative">
           <img
-            className="w-[86px] z-20 absolute bottom-16 -right-[40px]"
+            className="w-[86px] z-20 absolute bottom-[3.8rem] -right-[40px]"
             src="Images\star.svg"
             alt=""
           />
-          <img className="scale-[.97] w-auto" src="Images\hero.jpg" alt="" />
+          <img className="h-[88%] rounded-br-[100px] w-auto" src="Images\hero.jpg" alt="" />
           <div className="absolute -left-28 bottom-24">
             <img
               className="h-40 w-auto"
