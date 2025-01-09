@@ -12,6 +12,7 @@ import WhatWeCover from "./Sections/WhatWeCover"
 import WhatWeDo from "./Sections/WhatWeDo"
 
 const App = () => {
+  
   return (
     <div className="pl-20 pr-16 overflow-hidden">
       <Hero/>

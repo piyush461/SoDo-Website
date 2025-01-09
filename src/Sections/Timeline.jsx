@@ -26,7 +26,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div id="timeline" className="pt-20 flex justify-center items-start mt-28 w-full gap-9">
+    <div id="timeline" className="pt-20 flex justify-center items-start mt-28 w-full gap-6">
       <div className="flex flex-col justify-between">
         <div>
           <Step

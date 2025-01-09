@@ -412,75 +412,76 @@ body {
 
 .bordergradient:nth-child(1) {
   top: -70px;
-  left: -290px;
+  left: -22.8vw;
   transform: rotateZ(-3deg);
 }
 
 .bordergradient:nth-child(2) {
-  top: -170px;
-  left: -40px;
+  top: -13.4vw;
+  left: -3.1vw;
   transform: rotateZ(-8deg);
   z-index: 80;
 }
 
 .bordergradient:nth-child(3) {
   top: -110px;
-  left: 280px;
+  left: 21.8vw;
   transform: rotateZ(19deg);
 }
 
 .bordergradient:nth-child(4) {
-  left: -190px;
+  left: -14.8vw;
   top: 60px;
   z-index: 60;
 }
 
 .bordergradient:nth-child(5) {
   top: 70px;
-  left: 110px;
+  left: 8.5vw;
   transform: rotateZ(11deg);
   z-index: 70;
 }
 
 .bordergradient:nth-child(6) {
   top: 110px;
-  left: 229px;
+  left: 17.9vw;
   transform: rotateZ(2deg);
   z-index: 50;
 }
 
 .testimonialsContainer:hover .bordergradient:nth-child(1) {
   top: -100px;
-  left: -365px;
+  left: -28.4vw;
   transform: rotate(0deg);
 }
 
+
 .testimonialsContainer:hover .bordergradient:nth-child(2) {
-  left: -10px;
+  left: 0;
   top: -140px;
   transform: rotate(0deg);
 }
 
 .testimonialsContainer:hover .bordergradient:nth-child(3) {
-  left: 348px;
+  left: 28.4vw;
   top: -113px;
   transform: rotate(0deg);
 }
 
 .testimonialsContainer:hover .bordergradient:nth-child(4) {
   top: 168px;
-  left: -365px;
+  left: -28.4vw;
   transform: rotate(0deg);
 }
 
 .testimonialsContainer:hover .bordergradient:nth-child(5) {
-  left: -10px;
+  left: 0;
   top: 150px;
   transform: rotate(0deg);
 }
 
 .testimonialsContainer:hover .bordergradient:nth-child(6) {
-  left: 348px;
+  left: 28.4vw;
   top: 180px;
   transform: rotate(0deg);
 }
