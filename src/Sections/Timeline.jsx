@@ -87,7 +87,7 @@ const Timeline = () => {
       <div className="flex min-w-7 flex-col gap-2 items-center">
         <div>
           <img
-            className="ball opacity-20"
+            className="ball opacity-20 h-[2rem] "
             src="Images/graBall.svg"
             alt=""
           />
@@ -115,7 +115,7 @@ const Timeline = () => {
         </div>
         <div>
           <img
-            className="mt-1 opacity-20 ball"
+            className="mt-1 opacity-20 ball  h-[2rem] "
             src="Images/graBall.svg"
             alt=""
           />
