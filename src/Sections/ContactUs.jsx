@@ -45,9 +45,9 @@ const ContactUs = () => {
         publicKey: "-ks_e6AfytaMAlQBG",
       }),
       {
-        pending: "Sending mail...",
-        success: "Mail sent successfully!",
-        error: "Failed to send mail. Please try again.",
+        pending: "Sending message...",
+        success: "Message sent successfully!",
+        error: "Failed to send message. Please try again.",
       }
     );
   };
@@ -62,7 +62,7 @@ const ContactUs = () => {
         </h3>
         <ToastContainer
           position="top-right"
-          autoClose={5000}
+          autoClose={3000}
           hideProgressBar={false}
           newestOnTop={false}
           closeOnClick={false}
