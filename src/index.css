@@ -249,7 +249,6 @@ body {
 /* %%%%%%%%%%%%%%%%%%%%% HERO SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
 
 .heroHead {
-  font-size: 4rem;
   font-weight: bold;
   background-image: linear-gradient(to right, #fb8b40, #8840fb);
   background-clip: text;
@@ -272,13 +271,16 @@ body {
 .hireTalent::before {
   content: "";
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 109%;
+  width: 104%;
   background-image: conic-gradient(
     from var(--angle),
-    transparent 70%,
-    #6a9cee,
-    #8840fb,
+    transparent 75%,
+    #8B42F6,
+    #8B42F6,
+    #BD63A3,
+    #BD63A3,
+    #fb8b40,
     #fb8b40
   );
   top: 50%;
@@ -286,14 +288,15 @@ body {
   translate: -50% -50%;
   z-index: -1;
   border-radius: 14px;
-  padding: 27px 67px;
+  
   opacity: 0;
 }
 
 .hireTalent::before,
 .hireTalentafter {
   opacity: 100;
-  animation: spin 3s linear infinite;
+  animation: spin 1.6s linear infinite;
+  animation-delay: -2s;
 }
 
 @keyframes spin {
@@ -400,6 +403,11 @@ body {
   background-color: white;
 }
 
+.bordergradient {
+  transition:  all 0.5s ease;;
+}
+
+
 .gradientBorder {
   background-image: linear-gradient(to right, #fb8b40, #8840fb);
 }
@@ -407,9 +415,8 @@ body {
 .bordergradient {
   position: absolute;
   opacity: 0.9;
-  transition: all 0.6s ease, opacity 0.6s ease;
 }
-
+/* 
 .bordergradient:nth-child(1) {
   top: -70px;
   left: -22.8vw;
@@ -447,9 +454,9 @@ body {
   left: 17.9vw;
   transform: rotateZ(2deg);
   z-index: 50;
-}
+} */
 
-.testimonialsContainer:hover .bordergradient:nth-child(1) {
+/* .testimonialsContainer:hover .bordergradient:nth-child(1) {
   top: -100px;
   left: -28.4vw;
   transform: rotate(0deg);
@@ -484,7 +491,7 @@ body {
   left: 28.4vw;
   top: 180px;
   transform: rotate(0deg);
-}
+} */
 
 /* %%%%%%%%%%%%%%%%%%%%%%% OUR MODELS SECTION %%%%%%%%%%%%%%%%%%%%%%%%% */
 
@@ -540,4 +547,22 @@ body {
 .contactForm {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.contactButton{
+  position: relative;
+}
+
+.contactButton::before{
+  content: '';
+  height: 107%;
+  width: 104%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  background-image: conic-gradient(from var(--angle),transparent 75%, blue , purple, orange);
+  animation: spin 1.5s linear infinite;
+  animation-delay: -200s;
 }

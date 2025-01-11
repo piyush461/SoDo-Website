@@ -14,7 +14,7 @@ const OurServices = () => {
           <div className=" w-[45%] flex flex-col justify-between gap-6 ">
             <h3 className="font-poppins font-semibold text-3xl">Recruitment</h3>
             <p className="font-roboto text-lg">{recruitmentDesc}</p>
-            <Button content="Learn more" />
+            {/* <Button content="Learn more" /> */}
           </div>
           <div>
             <img src="Images/recruitment.jpg" alt="" />
@@ -27,9 +27,9 @@ const OurServices = () => {
           <div className=" w-[45%] flex flex-col justify-between gap-8">
             <h3 className="font-poppins font-semibold text-3xl">Staffing</h3>
             <p className="font-roboto text-lg">{staffingDesc}</p>
-            <button className="buttonAnimation w-32 h-12 rounded-xl text-white bg-black">
+            {/* <button className="buttonAnimation w-32 h-12 rounded-xl text-white bg-black">
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

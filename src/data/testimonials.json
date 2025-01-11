@@ -1,14 +1,14 @@
 {
     "testimonials": [
       {
-        "desc": "SoDo delivered exactly what we needed - top-quality talent through a hassle-free, streamlined process that made everything easy.",
-        "imgUrl": "Images/testimonial2.svg",
+        "desc": "The team is committed to exceeding expectations. We received candidate profiles the same day, and the selected candidate was onboarded by the end of the week.",
+        "imgUrl": "Images/testimonial1.svg",
         "name": "Client Name",
         "company": "Title, company"
       },
       {
-        "desc": "The team is committed to exceeding expectations. We received candidate profiles the same day, and the selected candidate was onboarded by the end of the week.",
-        "imgUrl": "Images/testimonial1.svg",
+        "desc": "SoDo delivered exactly what we needed - top-quality talent through a hassle-free, streamlined process that made everything easy.",
+        "imgUrl": "Images/testimonial2.svg",
         "name": "Client Name",
         "company": "Title, company"
       },
@@ -19,14 +19,14 @@
         "company": "Title, company"
       },
       {
-        "desc": "Despite the challenges of a compressed schedule, TechWave not only provided exceptional professionals promptly but also facilitated an effortless integration experience.",
-        "imgUrl": "Images/testimonial3.svg",
+        "desc": "We got the candidate profiles on the same day, and the chosen candidate was fully integrated by the week's end.",
+        "imgUrl": "Images/testimonial4.svg",
         "name": "Client Name",
         "company": "Title, company"
       },
       {
-        "desc": "We got the candidate profiles on the same day, and the chosen candidate was fully integrated by the week's end.",
-        "imgUrl": "Images/testimonial4.svg",
+        "desc": "Despite the challenges of a compressed schedule, TechWave not only provided exceptional professionals promptly but also facilitated an effortless integration experience.",
+        "imgUrl": "Images/testimonial3.svg",
         "name": "Client Name",
         "company": "Title, company"
       },

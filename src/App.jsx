@@ -14,7 +14,7 @@ import WhatWeDo from "./Sections/WhatWeDo"
 const App = () => {
   
   return (
-    <div className="pl-20 pr-16 overflow-hidden">
+    <div className="pl-20 pr-20 overflow-hidden">
       <Hero/>
       <TransformHiring/>
       <WhatWeDo/>

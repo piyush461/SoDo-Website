@@ -3,14 +3,22 @@ const HeroSection = () => {
   return (
     <div className="flex justify-between pt-8 w-full relative">
       <div className="absolute top-[25%] left-[30%] -z-10">
-          <img className="h-[500px] w-[500px]" src="Images/yellowEllipse.svg" alt="" />
+        <img
+          className="h-[500px] w-[500px]"
+          src="Images/yellowEllipse.svg"
+          alt=""
+        />
       </div>
       <div className="absolute -bottom-[240px] -right-[190px]  -z-10">
-          <img className="h-[650px] w-[650px]" src="Images/blueEllipse.svg" alt="" />
+        <img
+          className="h-[650px] w-[650px]"
+          src="Images/blueEllipse.svg"
+          alt=""
+        />
       </div>
-      <div className="mt-16">
+      <div className="mt-9">
         <div>
-          <div className="flex gap-2 items-center">
+          {/* <div className="flex gap-2 items-center">
             <div className="relative flex">
               <img className="z-40" src="Images\profile1.svg" alt="" />
               <img
@@ -32,18 +40,19 @@ const HeroSection = () => {
             <h4 className="font-archivo tracking-tighter pl-20  text-[14px] text-gray-400 font-medium text-nowrap">
               trusted by 120+ companies
             </h4>
-          </div>
+          </div> */}
           <div className="poppins-semibold pt-6">
-            <h1 className="text-[5.3vw] font-semibold ">Unlock the Top</h1>
-            <span className="heroHead text-[5.3vw] leading-relaxed text-nowrap">
-              1% of IT Talent
+            <h1 className="text-[5.3vw] font-semibold ">Hire Top 1%</h1>
+            <span className="heroHead text-[5.3vw]  leading-tight text-nowrap">
+              IT & non-IT Talent
             </span>
           </div>
-          <h3 className="font-roboto font-light text-[1.6vw] mb-10">
-            We connect businesses with <br /> multi-layered vetted and <br /> screened
-            talent and <br /> resources
+          <h3 className="font-roboto font-light text-[1.6vw] my-10">
+          Elevating companies with top quality multi-layer screened <br /> talent and resources for contract roles in 24 hours.
           </h3>
-          <a href="#contact"><Button content="Hire Talent" /></a>
+          <a href="#contact">
+            <Button content="Hire Talent" />
+          </a>
         </div>
         <div className="flex gap-10 mt-16">
           <div>
@@ -60,14 +69,13 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex justify-end">
         <div className="relative">
           <img
-            className="w-[86px] z-20 absolute bottom-[3.8rem] -right-[40px]"
-            src="Images\star.svg"
+            className="h-[88%] rounded-br-[100px] w-auto"
+            src="Images\hero.jpg"
             alt=""
           />
-          <img className="h-[88%] rounded-br-[100px] w-auto" src="Images\hero.jpg" alt="" />
           <div className="absolute -left-28 bottom-24">
             <img
               className="h-40 w-auto"
@@ -75,9 +83,6 @@ const HeroSection = () => {
               alt=""
             />
           </div>
-        </div>
-        <div className="flex flex-col justify-between">
-          <img className="h-[40%] w-14" src="Images\rightText.svg" alt="" />
         </div>
       </div>
     </div>

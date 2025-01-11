@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-
+import faq from '../data/faqData.json'
 const FaqCard = ({ isOpen, toggleOpen, question, answer }) => {
   const [maxHeight, setMaxHeight] = useState(0);
   const contentRef = useRef(null);
@@ -36,7 +36,7 @@ const FaqCard = ({ isOpen, toggleOpen, question, answer }) => {
           <div
             ref={contentRef}
             className="pt-4 pr-7 text-[14.4px] text-[#464454] font-[400]">
-            <p>{answer}</p>
+            <p dangerouslySetInnerHTML={{ __html: answer }} />
           </div>
         </div>
       </div>

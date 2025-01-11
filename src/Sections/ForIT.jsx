@@ -40,7 +40,7 @@ const ForIT = () => {
             onMouseEnter={() => handleMouseEnter(itRef, gradball1Ref)}
             onMouseLeave={handleMouseLeave}
           >
-            For IT Companies
+            For Companies
             <div className="pl-3 pt-2">
               <img
                 ref={gradball1Ref}
@@ -57,7 +57,7 @@ const ForIT = () => {
             onMouseEnter={() => handleMouseEnter(startupRef, gradball2Ref, true)}
             onMouseLeave={handleMouseLeave}
           >
-            For Startups
+            For MNCs
             <div className="pl-3 pt-2">
               <img
                 ref={gradball2Ref}
@@ -74,7 +74,7 @@ const ForIT = () => {
             onMouseEnter={() => handleMouseEnter(mncsRef, gradball3Ref, true)}
             onMouseLeave={handleMouseLeave}
           >
-            For MNCs
+            For Startups
             <div className="pl-3 pt">
               <img
                 ref={gradball3Ref}
