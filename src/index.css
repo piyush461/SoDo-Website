@@ -495,10 +495,10 @@ body {
 
 /* %%%%%%%%%%%%%%%%%%%%%%% OUR MODELS SECTION %%%%%%%%%%%%%%%%%%%%%%%%% */
 
-.ourModelsBlack,
+/* .ourModelsBlack,
 .ourModelsWhite {
   transition: all 0.2s ease;
-}
+} */
 
 .ourModelsBlack {
   background-color: black;
@@ -515,7 +515,8 @@ body {
 }
 
 .ourModelsWhite {
-  background: linear-gradient(to bottom, #e0dff8 50%, white 100%);
+  background: white;
+  /* background: linear-gradient(to bottom, #e0dff8 50%, white 100%); */
 }
 
 .ourModelsWhite h1,
@@ -535,9 +536,9 @@ body {
   transition: all 0.4s ease;
 }
 
-.faqBorder:hover {
+/* .faqBorder:hover {
   background-image: linear-gradient(to right, #fb8b40, #8840fb);
-}
+} */
 .faqactive {
   background-image: linear-gradient(to right, #fb8b40, #8840fb);
 }

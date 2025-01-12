@@ -76,9 +76,9 @@ const HeroSection = () => {
             src="Images\hero.jpg"
             alt=""
           />
-          <div className="absolute -left-28 bottom-24">
+          <div className="absolute -left-28 bottom-[7vw]">
             <img
-              className="h-40 w-auto"
+              className="h-[13vw] w-auto"
               src="\Images\Applications.svg"
               alt=""
             />

@@ -12,7 +12,7 @@ const Testimonials = () => {
   
     const initialStyles = [
       { top: "-140px", left: "-28.4vw", transform: "rotate(0deg)" },
-      { top: "-117px", left: "0", transform: "rotate(0deg)" },
+      { top: "-120px", left: "0", transform: "rotate(0deg)" },
       { top: "-141px", left: "28.4vw", transform: "rotate(0deg)" },
       { top: "150px", left: "-28.4vw", transform: "rotate(0deg)" },
       { top: "150px", left: "0", transform: "rotate(0deg)" },

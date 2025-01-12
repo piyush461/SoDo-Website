@@ -35,9 +35,9 @@ const Footer = () => {
         <div className="flex gap-24">
           <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
             <h3 className="text-black mb-2">Learn More</h3>
-            <h3>FAQs</h3>
-            <h3>Services</h3>
-            <h3>Pricing</h3>
+            <h3><a href="#faqs">FAQs</a></h3>
+            <h3><a href="#ourServices">Services</a></h3>
+            <h3><a href="#ourModels">Pricing</a></h3>
           </div>
           <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
             <h3 className="text-black mb-2">Resources</h3>
@@ -51,7 +51,8 @@ const Footer = () => {
               <h3>202, 2nd Floor, EF3 Mall, Sector</h3>
               <h3>20A, Faridabad, Haryana 121002</h3>
             </div>
-            <h3 className="text-xs text-[#464454] mt-3 font-[500]">official@sodoservices.com</h3>
+            <h3 className="text-xs text-[#464454] mt-3 font-[500]">+91 9717717297</h3>
+            <h3 className="text-xs text-[#464454] mt-0 font-[500]">official@sodoservices.com</h3>
           </div>
         </div>
       </div>

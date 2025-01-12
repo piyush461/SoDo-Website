@@ -2,28 +2,27 @@ import { useState } from "react";
 import Heading from "../Components/Heading";
 
 const OurModels = () => {
-  const [hoveredSecond, setHoveredSecond] = useState(false);
+  // const [hoveredSecond, setHoveredSecond] = useState(false);
 
   return (
-    <div className="">
+    <div id="ourModels">
       <div className="text-center text-nowrap">
         <Heading head="Our Models" />
       </div>
       <div className="flex justify-center gap-6 pt-10">
         <div className="gradientBorder w-fit p-[3px] rounded-2xl">
           <div
-            className={`${
-              hoveredSecond ? "ourModelsWhite" : "ourModelsBlack"
-            } rounded-2xl text-white p-6 flex flex-col justify-between gap-10`}
-          >
+            className={
+              "rounded-2xl bg-black text-white p-6 flex flex-col justify-between gap-10"
+            }>
             <div>
               <h1 className="text-3xl font-poppins font-[500] pb-3 text-nowrap">
                 HRaaS & IT Recruitment
               </h1>
               <h3
-                className={`${
-                  hoveredSecond ? "text-black" : "text-white"
-                } font-[300] text-sm`}
+              // className={`${
+              //   hoveredSecond ? "text-black" : "text-white"
+              // } font-[300] text-sm`}
               >
                 Starting Free Range: 8.33% - 12% of the CTC
               </h3>
@@ -58,32 +57,28 @@ const OurModels = () => {
                 </span>
                 <sub>of the CTC</sub>
               </h1>
-              <button className="bg-white text-black w-full mt-10 h-12 rounded-xl text-sm font-[500]">
+              {/* <button className="bg-white text-black w-full mt-10 h-12 rounded-xl text-sm font-[500]">
                 Try Now
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
         <div
           className="gradientBorder w-fit p-[3px] rounded-2xl h-[100%]"
-          onMouseEnter={() => setHoveredSecond(true)}
-          onMouseLeave={() => setHoveredSecond(false)}
+          // onMouseEnter={() => setHoveredSecond(true)}
+          // onMouseLeave={() => setHoveredSecond(false)}
         >
           <div
-            className={`${
-              hoveredSecond ? "ourModelsBlack" : "ourModelsWhite"
-            } rounded-2xl text-white p-6 flex flex-col justify-between gap-[30px]`}
-          >
+            className={
+              "rounded-2xl bg-white p-6 flex flex-col justify-between gap-[30px]"
+            }>
             <div>
               <h1 className="text-3xl font-poppins font-[500] pb-3 text-black">
                 IT Staffing
               </h1>
-              <h3
-                className={`${
-                  hoveredSecond ? "text-white" : "text-black text-nowrap"
-                } font-[400] text-sm text-wrap`}
-              >
-                Flexible IT staffing designed to meet your business&apos;s <br /> unique requirements.
+              <h3 className={"font-[400] text-sm text-wrap"}>
+                Flexible IT staffing designed to meet your business&apos;s{" "}
+                <br /> unique requirements.
               </h3>
             </div>
             <div className="text-xs font-roboto text-[#464454] text-nowrap">
@@ -112,9 +107,9 @@ const OurModels = () => {
               <h1 className="text-black font-poppins text-5xl font-[500] px-1">
                 Custom
               </h1>
-              <button className=" bg-black text-white w-full mt-10 h-12 rounded-xl text-sm font-[500]">
+              {/* <button className=" bg-black text-white w-full mt-10 h-12 rounded-xl text-sm font-[500]">
                 Get a Quote
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

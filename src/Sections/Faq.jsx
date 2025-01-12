@@ -7,7 +7,7 @@ const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="mt-20 h-auto">
+    <div id="faqs" className="mt-20 h-auto">
       <div className="text-center">
         <Heading head="Frequently Asked Questions" />
       </div>
