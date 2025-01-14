@@ -61,7 +61,7 @@ const ContactUs = () => {
 
     toast.promise(
       emailjs.sendForm("service_qdehk46", "template_6jmdjjh", form.current, {
-        publicKey: "-ks_e6AfytaMAlQBG",
+        publicKey: "XleSx7EXHqSVDXTmm",
       }),
       {
         pending: "Sending message...",
