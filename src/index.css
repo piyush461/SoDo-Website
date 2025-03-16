@@ -409,7 +409,10 @@ body {
 
 
 .gradientBorder {
-  background-image: linear-gradient(to right, #fb8b40, #8840fb);
+  background-image: conic-gradient(
+    from var(--angle), #fb8b40 30%, #8840fb, #fb8b40);
+  animation: spin 2s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
 }
 
 .bordergradient {
@@ -567,3 +570,4 @@ body {
   animation: spin 1.5s linear infinite;
   animation-delay: -200s;
 }
+

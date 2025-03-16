@@ -16,7 +16,7 @@ const HeroSection = () => {
           alt=""
         />
       </div>
-      <div className="mt-9">
+      <div className="md:mt-9 ">
         <div>
           {/* <div className="flex gap-2 items-center">
             <div className="relative flex">
@@ -41,35 +41,55 @@ const HeroSection = () => {
               trusted by 120+ companies
             </h4>
           </div> */}
-          <div className="poppins-semibold pt-6">
-            <h1 className="text-[5.3vw] font-semibold ">Hire Top 1%</h1>
-            <span className="heroHead text-[5.3vw]  leading-tight text-nowrap">
+          <div className="poppins-semibold md:pt-6">
+            <h1 className="text-[5.3vw] max-md:text-4xl font-semibold ">Hire Top 1%</h1>
+            <span className="heroHead text-[5.3vw] max-md:text-4xl leading-tight text-nowrap">
               IT & non-IT Talent
             </span>
           </div>
-          <h3 className="font-roboto font-light text-[1.6vw] my-10">
-          Elevating companies with top quality multi-layer screened <br /> talent and resources for contract roles in 24 hours.
+          <h3 className="font-roboto font-light text-[1.6vw] max-md:text-[14px] md:my-10 my-4">
+            Elevating companies with top quality multi-layer screened <br />{" "}
+            talent and resources for contract roles in 24 hours.
           </h3>
-          <a href="#contact">
+          <a href="#contact"  className="max-md:hidden">
             <Button content="Hire Talent" />
           </a>
         </div>
-        <div className="flex gap-10 mt-16">
+        <div className="flex justify-end md:hidden">
+          <div className="relative">
+            <img
+              className="h-72 rounded-br-[100px] w-auto"
+              src="Images\hero.jpg"
+              alt=""
+            />
+            <div className="absolute -left-24 bottom-[3vw]">
+              <img
+                className="h-28 w-auto"
+                src="\Images\Applications.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-6 mt-16 bg-white mix-blend-multiply">
           <div>
-            <img src="Images\Company1.svg" alt="" />
+            <img className="h-11 max-md:h-7 w-auto" src="Images\ClientLogo1.webp" alt="" />
           </div>
           <div>
-            <img src="Images\Company2.svg" alt="" />
+            <img className="h-11 max-md:h-7 w-auto" src="Images\ClientLogo2.webp" alt="" />
           </div>
           <div>
-            <img src="Images\Company3.svg" alt="" />
+            <img className="h-11 max-md:h-7 w-auto" src="Images\clientLogo3.png" alt="" />
           </div>
           <div>
-            <img src="Images\Company4.svg" alt="" />
+            <img className="h-11 max-md:h-7 w-auto" src="Images\clientLogo4.svg" alt="" />
+          </div>
+          <div>
+            <img className="h-11 max-md:h-7 w-auto" src="Images\ClientLogo5.webp" alt="" />
           </div>
         </div>
       </div>
-      <div className="flex justify-end">
+      <div className="flex justify-end max-md:hidden">
         <div className="relative">
           <img
             className="h-[88%] rounded-br-[100px] w-auto"

@@ -4,26 +4,23 @@ const TransformHiring = () => {
   return (
     <div>
       <div className="mt-10 w-full">
-        <div className="flex justify-between gap-8">
-            <div className="thHr h-[1px] w-full mt-6"></div>
+        <div className="flex justify-between gap-8 max-md:justify-center">
+          <div className="thHr h-[1px] w-full mt-6 max-md:hidden"></div>
           <img
-            className="h-[3.7vw] mb-8" 
+            className="md:h-[3.7vw] mb-8"
             src="Images/transformHiring.svg"
             alt=""
           />
         </div>
         <div className="flex justify-between">
-            <div className="w-[100%] h-80">
-            </div>
-            <div className="w-[100%]">
-            <h2 className="font-roboto text-[2vw]">{desc}</h2>
-            </div>
+          <div className="w-[100%] h-80 max-md:hidden"></div>
+          <div className="w-[100%]">
+            <h2 className="font-roboto md:text-[2vw] text-md">{desc}</h2>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-
 
 export default TransformHiring;

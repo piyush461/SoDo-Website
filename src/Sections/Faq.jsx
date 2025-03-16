@@ -12,7 +12,18 @@ const Faq = () => {
         <Heading head="Frequently Asked Questions" />
       </div>
       <div className="mt-10 flex gap-8 w-full">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3 md:hidden">
+        {faqData.faqs.map((faq, index) => (
+              <FaqCard
+                key={index}
+                isOpen={openIndex === index}
+                toggleOpen={() => setOpenIndex(openIndex === index ? null : index)}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+        </div>
+        <div className="flex flex-col gap-4 max-md:hidden">
           {faqData.faqs
             .filter((_, index) => index % 2 === 0)
             .map((faq, index) => (
@@ -25,7 +36,7 @@ const Faq = () => {
               />
             ))}
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-md:hidden">
           {faqData.faqs
             .filter((_, index) => index % 2 !== 0)
             .map((faq, index) => (

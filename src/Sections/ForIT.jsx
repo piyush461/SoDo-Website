@@ -31,12 +31,12 @@ const ForIT = () => {
   };
 
   return (
-    <div id='forIT' className="flex justify-between gap-4 w-full mt-10">
-      <div className="flex flex-col justify-between">
+    <div id='forIT' className="flex justify-between gap-4 w-full max-md:flex-col mt-10">
+      <div className="flex md:flex-col justify-between max-md:items-center">
         <div>
           <h3
             ref={itRef}
-            className="cursor-pointer font-poppins mt-3 text-[3.4vw] font-semibold flex items-center text-nowrap relative text-black"
+            className="cursor-pointer font-poppins mt-3 md:text-[3.4vw] text-xl font-semibold flex items-center text-nowrap relative text-black"
             onMouseEnter={() => handleMouseEnter(itRef, gradball1Ref)}
             onMouseLeave={handleMouseLeave}
           >
@@ -53,7 +53,7 @@ const ForIT = () => {
           </h3>
           <h3
             ref={startupRef}
-            className="cursor-pointer font-poppins text-[#464454] text-[3.4vw] font-semibold flex items-center"
+            className="cursor-pointer font-poppins text-[#464454] md:text-[3.4vw] text-xl font-semibold flex items-center"
             onMouseEnter={() => handleMouseEnter(startupRef, gradball2Ref, true)}
             onMouseLeave={handleMouseLeave}
           >
@@ -70,7 +70,7 @@ const ForIT = () => {
           </h3>
           <h3
             ref={mncsRef}
-            className="cursor-pointer font-poppins text-[#464454] text-[3.4vw] font-semibold flex items-center"
+            className="cursor-pointer font-poppins text-[#464454] md:text-[3.4vw] text-xl font-semibold flex items-center"
             onMouseEnter={() => handleMouseEnter(mncsRef, gradball3Ref, true)}
             onMouseLeave={handleMouseLeave}
           >
@@ -87,14 +87,14 @@ const ForIT = () => {
           </h3>
         </div>
         <div>
-          <button className="learnMore flex items-center border mb-6 font-semibold px-6 py-3 rounded-2xl hover:text-black">
+          <button className="md:learnMore flex items-center border mb-6 font-semibold px-6 py-3 rounded-2xl max-md:px-3 max-md:py-2 max-md:text-sm hover:text-black">
             Learn More
             <img src="Images/rightArrow.svg" alt=""/>
           </button>
         </div>
       </div>
       <div>
-        <img className="h-[38vw] w-auto" src="Images/forIT.jpg" alt="" />
+        <img className="md:h-[38vw] w-auto" src="Images/forIT.jpg" alt="" />
       </div>
     </div>
   );

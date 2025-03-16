@@ -4,7 +4,6 @@ import HeroSection from "../Components/HeroSection";
 const Hero = () => {
   return (
     <div>
-      <Header />
       <HeroSection/>
     </div>
   );

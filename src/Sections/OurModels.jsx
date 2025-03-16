@@ -1,33 +1,28 @@
-import { useState } from "react";
+
 import Heading from "../Components/Heading";
 
 const OurModels = () => {
-  // const [hoveredSecond, setHoveredSecond] = useState(false);
 
   return (
     <div id="ourModels">
       <div className="text-center text-nowrap">
         <Heading head="Our Models" />
       </div>
-      <div className="flex justify-center gap-6 pt-10">
-        <div className="gradientBorder w-fit p-[3px] rounded-2xl">
+      <div className="flex justify-center max-md:w-full max-md:flex-col gap-6 pt-10">
+        <div className="gradientBorder w-fit py-[3px] px-[3px] rounded-2xl">
           <div
             className={
               "rounded-2xl bg-black text-white p-6 flex flex-col justify-between gap-10"
             }>
             <div>
-              <h1 className="text-3xl font-poppins font-[500] pb-3 text-nowrap">
+              <h1 className="md:text-3xl text-2xl font-poppins font-[500] pb-3 text-nowrap">
                 HRaaS & IT Recruitment
               </h1>
-              <h3
-              // className={`${
-              //   hoveredSecond ? "text-black" : "text-white"
-              // } font-[300] text-sm`}
-              >
+              <h3 className="font-poppins max-md:text-xs text-gray-400">
                 Starting Free Range: 8.33% - 12% of the CTC
               </h3>
             </div>
-            <div className="text-xs font-roboto">
+            <div className="md:text-xs text-[11px] font-roboto">
               <h4 className="flex gap-1">
                 <img src="Images/tick.svg" alt="" />
                 Flexible Options: Full-time or part-time staffing
@@ -64,24 +59,21 @@ const OurModels = () => {
           </div>
         </div>
         <div
-          className="gradientBorder w-fit p-[3px] rounded-2xl h-[100%]"
-          // onMouseEnter={() => setHoveredSecond(true)}
-          // onMouseLeave={() => setHoveredSecond(false)}
-        >
+          className="gradientBorder w-fit p-[3.4px] rounded-2xl h-[100%]">
           <div
             className={
               "rounded-2xl bg-white p-6 flex flex-col justify-between gap-[30px]"
             }>
             <div>
-              <h1 className="text-3xl font-poppins font-[500] pb-3 text-black">
+              <h1 className="md:text-3xl text-2xl font-poppins font-[500] pb-3 text-black">
                 IT Staffing
               </h1>
-              <h3 className={"font-[400] text-sm text-wrap"}>
+              <h3 className="font-poppins max-md:text-xs">
                 Flexible IT staffing designed to meet your business&apos;s{" "}
                 <br /> unique requirements.
               </h3>
             </div>
-            <div className="text-xs font-roboto text-[#464454] text-nowrap">
+            <div className="text-[11px] md:text-xs font-roboto text-[#464454] text-nowrap">
               <h4 className="flex gap-1">
                 <img src="Images/tick.svg" alt="" />
                 Flexible Options: Full-time or part-time staffing
