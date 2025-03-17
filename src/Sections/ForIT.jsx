@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 const ForIT = () => {
   const itRef = useRef(null);
@@ -8,81 +8,59 @@ const ForIT = () => {
   const gradball2Ref = useRef(null);
   const gradball3Ref = useRef(null);
 
-  const handleMouseEnter = (targetRef, gradballRef, changeItColor = false) => {
-    targetRef.current.style.color = 'black';
-    gradball1Ref.current.style.opacity = '0';
-    gradball2Ref.current.style.opacity = '0';
-    gradball3Ref.current.style.opacity = '0';
-    gradballRef.current.style.opacity = '1';
+  useEffect(() => {
+    const handleScroll = () => {
+      const itPositionTop = itRef.current.getBoundingClientRect().top;
+      const itPositionBottom = itRef.current.getBoundingClientRect().bottom;
+      const startupPositionTop = startupRef.current.getBoundingClientRect().top;
+      const startupPositionBottom = startupRef.current.getBoundingClientRect().bottom;
+      const mncsPositionTop = mncsRef.current.getBoundingClientRect().top;
+      const mncsPositionBottom = mncsRef.current.getBoundingClientRect().bottom;
+      const viewportHeight = window.innerHeight / 2;
 
-    if (changeItColor) {
+      gradball1Ref.current.style.opacity = '0';
+      gradball2Ref.current.style.opacity = '0';
+      gradball3Ref.current.style.opacity = '0';
       itRef.current.style.color = '#464454';
-    }
-  };
+      startupRef.current.style.color = '#464454';
+      mncsRef.current.style.color = '#464454';
 
-  const handleMouseLeave = () => {
-    startupRef.current.style.color = '#464454';
-    mncsRef.current.style.color = '#464454';
-    itRef.current.style.color = 'black';
-    gradball1Ref.current.style.opacity = '0';
-    gradball2Ref.current.style.opacity = '0';
-    gradball3Ref.current.style.opacity = '0';
-    gradball1Ref.current.style.opacity = '1';
-  };
+      if (itPositionBottom-60> viewportHeight) {
+        gradball1Ref.current.style.opacity = '1';
+        itRef.current.style.color = 'black';
+      } else if (startupPositionTop -100 < viewportHeight && (startupPositionBottom+60)> viewportHeight) {
+        gradball2Ref.current.style.opacity = '1';
+        startupRef.current.style.color = 'black';
+      } else if ((mncsPositionTop-100)< viewportHeight) {
+        gradball3Ref.current.style.opacity = '1';
+        mncsRef.current.style.color = 'black';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div id='forIT' className="flex justify-between gap-4 w-full max-md:flex-col mt-10">
+    <div id='forIT' className="flex justify-between gap-4 w-full max-md:flex-col mt-20">
       <div className="flex md:flex-col justify-between max-md:items-center">
-        <div>
-          <h3
-            ref={itRef}
-            className="cursor-pointer font-poppins mt-3 md:text-[3.4vw] text-xl font-semibold flex items-center text-nowrap relative text-black"
-            onMouseEnter={() => handleMouseEnter(itRef, gradball1Ref)}
-            onMouseLeave={handleMouseLeave}
-          >
-            For Companies
-            <div className="pl-3 pt-2">
-              <img
-                ref={gradball1Ref}
-                className='rotateBall'
-                src="Images/graBall.svg"
-                alt=""
-                style={{ opacity: 1 }}
-              />
-            </div>
-          </h3>
-          <h3
-            ref={startupRef}
-            className="cursor-pointer font-poppins text-[#464454] md:text-[3.4vw] text-xl font-semibold flex items-center"
-            onMouseEnter={() => handleMouseEnter(startupRef, gradball2Ref, true)}
-            onMouseLeave={handleMouseLeave}
-          >
+        <div className='flex flex-col gap-3 md:gap-6'>
+          <h3 ref={itRef} className="font-poppins md:text-[3.4vw] text-xl font-semibold flex items-center text-nowrap relative text-[#464454]">
             For MNCs
             <div className="pl-3 pt-2">
-              <img
-                ref={gradball2Ref}
-                className="rotateBall"
-                src="Images/graBall.svg"
-                alt=""
-                style={{ opacity: 0 }}
-              />
+              <img ref={gradball1Ref} className='rotateBall' src="Images/graBall.svg" alt="" style={{ opacity: 0 }} />
             </div>
           </h3>
-          <h3
-            ref={mncsRef}
-            className="cursor-pointer font-poppins text-[#464454] md:text-[3.4vw] text-xl font-semibold flex items-center"
-            onMouseEnter={() => handleMouseEnter(mncsRef, gradball3Ref, true)}
-            onMouseLeave={handleMouseLeave}
-          >
+          <h3 ref={startupRef} className="font-poppins md:text-[3.4vw] text-xl font-semibold flex items-center text-[#464454]">
+            For Companies
+            <div className="pl-3 pt-2">
+              <img ref={gradball2Ref} className="rotateBall" src="Images/graBall.svg" alt="" style={{ opacity: 0 }} />
+            </div>
+          </h3>
+          <h3 ref={mncsRef} className="font-poppins md:text-[3.4vw] text-xl font-semibold flex items-center text-[#464454]">
             For Startups
             <div className="pl-3 pt">
-              <img
-                ref={gradball3Ref}
-                className="rotateBall"
-                src="Images/graBall.svg"
-                alt=""
-                style={{ opacity: 0 }}
-              />
+              <img ref={gradball3Ref} className="rotateBall" src="Images/graBall.svg" alt="" style={{ opacity: 0 }} />
             </div>
           </h3>
         </div>

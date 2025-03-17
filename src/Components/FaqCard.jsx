@@ -22,10 +22,10 @@ const FaqCard = ({ isOpen, toggleOpen, question, answer }) => {
           <h1 className="font-poppins md:text-[1.3vw] text-[14px] font-[500]">{question}</h1>
           <button onClick={toggleOpen} className="scale-90">
             <img
-              className={`transform transition-transform duration-300 ease-out ${
-                isOpen ? "rotate-45" : ""
+              className={`transform transition-transform duration-300 h-4 ease-out ${
+                isOpen ? "[transform:rotateX(180deg)]" : ""
               }`}
-              src="Images/plus.svg"
+              src="Images/arrowUp.png"
               alt="toggle"
             />
           </button>

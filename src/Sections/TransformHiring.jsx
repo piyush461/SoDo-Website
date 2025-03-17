@@ -4,12 +4,11 @@ const TransformHiring = () => {
   return (
     <div>
       <div className="mt-10 w-full">
-        <div className="flex justify-between gap-8 max-md:justify-center">
-          <div className="thHr h-[1px] w-full mt-6 max-md:hidden"></div>
+        <div className="flex md:justify-between gap-4 md:gap-8 max-md:flex-col">
+          <div className="thHr h-[1px] w-full mt-6"></div>
           <img
-            className="md:h-[3.7vw] mb-8"
+            className="md:h-[3.7vw] md:mb-8 mb-4"
             src="Images/transformHiring.svg"
-            alt=""
           />
         </div>
         <div className="flex justify-between">

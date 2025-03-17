@@ -13,13 +13,19 @@ const Timeline = () => {
 
       balls.forEach((ball) => {
         const ballRect = ball.getBoundingClientRect();
-        ball.style.opacity = ballRect.top < viewportCenter ? "100%" : "20%";
+        if (ballRect.top < viewportCenter) {
+          ball.style.opacity = "1";
+          ball.classList.add("rotateBall");
+        } else {
+          ball.style.opacity = "0.2";
+          ball.classList.remove("rotateBall");
+        }
       });
 
       lines.forEach((line) => {
         const lineRect = line.getBoundingClientRect();
         line.style.opacity =
-          lineRect.top + 10 < viewportCenter ? "100%" : "20%";
+          lineRect.top + 10 < viewportCenter && lineRect.bottom > viewportCenter ? "100%" : "20%";
       });
     };
 
@@ -28,11 +34,11 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="mt-28" id="timeline">
+    <div className="mt-16" id="timeline">
       <div className="text-center">
         <Heading head="Our Process" />
       </div>
-      <div className="md:hidden flex justify-center items-start mt-14 md:w-full gap-6">
+      <div className="md:hidden flex justify-center items-start mt-8 md:w-full gap-6">
         <div className="flex min-w-7 flex-col gap-2 items-center">
           <div>
             <img
@@ -119,18 +125,18 @@ const Timeline = () => {
               desc="We'll provide you with a handful of top-quality profiles, multi-layer screened and vetted from our multi-dimensional aggregated network, perfectly aligned with your job description."
             />
             <Card>
-              <div className="flex justify-between w-[90%] p-3 m-4 border-2 border-[#E8E6FF] rounded-[20px] md:w-[35vw] ">
+              <div className="flex justify-between p-3 m-4 border-2 border-[#E8E6FF] rounded-[20px] md:w-[35vw] ">
                 <div className="flex gap-2 items-center flex-shrink-0">
                   <div>
                     <img
-                      className="h-[3em] w-[3em]"
+                      className="h-[2.6em]"
                       src="Images/jasmine.jpg"
                       alt=""
                     />
                   </div>
                   <div>
                     <h4 className="font-bold text-[.9rem] font-poppins">
-                      Jasmine Taylor
+                      Jasmine
                     </h4>
                     <h4 className="font-roboto text-[11.5px]">
                       Product Designer
@@ -145,15 +151,11 @@ const Timeline = () => {
               <div className="flex justify-between p-3 m-4 border-2 border-[#E8E6FF] rounded-[20px]">
                 <div className="flex gap-2 justify-between items-center flex-shrink-0">
                   <div>
-                    <img className="h-[3em]" src="Images/jordon.svg" alt="" />
+                    <img className="h-[2.6em]" src="Images/jordon.svg" alt="" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm font-poppins">
-                      Jordan Blake
-                    </h4>
-                    <h4 className="font-roboto text-xs">
-                      User Experience designer
-                    </h4>
+                    <h4 className="font-bold text-sm font-poppins">Jordan</h4>
+                    <h4 className="font-roboto text-xs">UI designer</h4>
                   </div>
                 </div>
                 <div className="text-[8px] my-1 font-roboto bg-[#E8E6FF] h-fit px-2 py-1 rounded-[30px]">
@@ -169,36 +171,36 @@ const Timeline = () => {
               desc="Schedule interviews with your preferred talent or resources and trust SoDo for end-to-end HR support for a smooth and productive recruitment experience."
             />
 
-<div className="flex justify-center gap-3">
-            <Card>
-              <div className="flex flex-col items-center h-40 py-2 px-[16px]">
-                <img className="h-[60px]" src="Images/jasmine.jpg" alt="" />
-                <h1 className="font-poppins text-sm text-nowrap mt-2 font-bold">
-                  Jasmine Taylor
-                </h1>
-                <h3 className="text-xs mb-1 font-roboto font-[400]">
-                  Product Designer
-                </h3>
-                <div className="bg-[#e8e6ff] font-[400] font-roboto text-[10px] p-2 px-3 rounded-lg w-fit">
-                  Onboarding
+            <div className="flex justify-center gap-3">
+              <Card>
+                <div className="flex flex-col items-center h-40 py-2 px-[16px]">
+                  <img className="h-[60px]" src="Images/jasmine.jpg" alt="" />
+                  <h1 className="font-poppins text-sm text-nowrap mt-2 font-bold">
+                    Jasmine Taylor
+                  </h1>
+                  <h3 className="text-xs mb-1 font-roboto font-[400]">
+                    Product Designer
+                  </h3>
+                  <div className="bg-[#e8e6ff] font-[400] font-roboto text-[10px] p-2 px-3 rounded-lg w-fit">
+                    Onboarding
+                  </div>
                 </div>
-              </div>
-            </Card>
-            <Card>
-              <div className="overflow-hidden h-40 relative">
-                <img
-                  className="scale-95  absolute top-4"
-                  src="Images/graph1.svg"
-                  alt=""
-                />
-                <img
-                  className="scale-95 pt-20"
-                  src="Images/graph2.svg"
-                  alt=""
-                />
-              </div>
-            </Card>
-          </div>
+              </Card>
+              <Card>
+                <div className="overflow-hidden h-40 relative">
+                  <img
+                    className="scale-95  absolute top-4"
+                    src="Images/graph1.svg"
+                    alt=""
+                  />
+                  <img
+                    className="scale-95 pt-20"
+                    src="Images/graph2.svg"
+                    alt=""
+                  />
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
@@ -232,8 +234,7 @@ const Timeline = () => {
                     </h4>
                   </div>
                 </div>
-                <div className="text-[.6rem] w-fit font-roboto bg-[#E8E6FF] h-fit px-2 py-1 rounded-[30px]">
-                  {" "}
+                <div className="text-[.6rem] mt-2 w-fit font-roboto bg-[#E8E6FF] h-fit px-2 py-1 rounded-[30px]">
                   <span className="font-semibold pr-1">90%</span>match
                 </div>
               </div>
@@ -251,7 +252,7 @@ const Timeline = () => {
                     </h4>
                   </div>
                 </div>
-                <div className="text-[11px] font-roboto bg-[#E8E6FF] h-fit px-2 py-1 rounded-[30px]">
+                <div className="text-[.6rem] mt-2 font-roboto bg-[#E8E6FF] h-fit px-2 py-1 rounded-[30px]">
                   <span className="font-semibold pr-1">85%</span>match
                 </div>
               </div>

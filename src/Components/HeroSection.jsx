@@ -55,23 +55,23 @@ const HeroSection = () => {
             <Button content="Hire Talent" />
           </a>
         </div>
-        <div className="flex justify-end md:hidden">
+        <div className="flex justify-end pr-12 md:hidden">
           <div className="relative">
             <img
               className="h-72 rounded-br-[100px] w-auto"
               src="Images\hero.jpg"
               alt=""
             />
-            <div className="absolute -left-24 bottom-[3vw]">
+            <div className="absolute -left-[90px] bottom-[3vw]">
               <img
-                className="h-28 w-auto"
+                className="h-28 drop-shadow-md w-auto"
                 src="\Images\Applications.svg"
                 alt=""
               />
             </div>
           </div>
         </div>
-        <div className="flex gap-6 mt-16 bg-white mix-blend-multiply">
+        <div className=" gap-6 bg-white mix-blend-multiply hidden">
           <div>
             <img className="h-11 max-md:h-7 w-auto" src="Images\ClientLogo1.webp" alt="" />
           </div>

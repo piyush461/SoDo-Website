@@ -3,7 +3,7 @@ import Heading from "../Components/Heading";
 import TestimonialCard from "../Components/TestimonialCard";
 import testimonialsData from "../data/testimonials.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -17,8 +17,8 @@ const Testimonials = () => {
 
     const initialStyles = [
       { top: "-140px", left: "-28.4vw", transform: "rotate(0deg)" },
-      { top: "-120px", left: "0", transform: "rotate(0deg)" },
-      { top: "-141px", left: "28.4vw", transform: "rotate(0deg)" },
+      { top: "-140px", left: "0", transform: "rotate(0deg)" },
+      { top: "-140px", left: "28.4vw", transform: "rotate(0deg)" },
       { top: "150px", left: "-28.4vw", transform: "rotate(0deg)" },
       { top: "150px", left: "0", transform: "rotate(0deg)" },
       { top: "150px", left: "28.4vw", transform: "rotate(0deg)" },
@@ -81,7 +81,7 @@ const Testimonials = () => {
   return (
     <div className="text-center mt-20">
       <Heading head="What they say about us" />
-      <div className="testimonialsContainer hoverDiv text-left  md:min-h-[680px] flex justify-center items-center max-md:h-fit">
+      <div className="hoverDiv text-left max-md:-mt-10  md:min-h-[680px] flex justify-center items-center max-md:h-fit">
         <div className="md:hidden w-full">
           <Swiper
             slidesPerView={1}
@@ -105,7 +105,7 @@ const Testimonials = () => {
           </Swiper>
         </div>
 
-        <div className="relative h-[24vw] w-[24vw] max-md:hidden">
+        <div className="testimonialsContainer relative h-[24vw] w-[24vw] max-md:hidden">
           {testimonialsData.testimonials.map((testimonial, index) => (
             <div
               key={index}
