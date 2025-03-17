@@ -23,13 +23,13 @@ const Header = ({ isOpen, setIsOpen }) => {
         <div className="md:hidden h-full w-8 flex justify-center items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex flex-col h-5 w-full justify-between"
+            className="flex flex-col h-9 w-full justify-around"
           >
             <div
               className={`w-full h-[3px] rounded-md bg-black transform origin-bottom-left transition-all ease 100 ${
                 isOpen
                   ? "rotate-[45deg] -translate-x-[2px] -translate-y-[5px]"
-                  : "rotate-0"
+                  : "rotate-0 translate-x-0 translate-y-0"
               }`}
             ></div>
             <div

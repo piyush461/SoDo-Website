@@ -19,10 +19,10 @@ const FaqCard = ({ isOpen, toggleOpen, question, answer }) => {
       }`}>
       <div className="h-auto bg-white rounded-[22px] px-4 py-[26px] transition-all ease-out">
         <div className="flex justify-between">
-          <h1 className="font-poppins md:text-[1.3vw] text-[14px] font-[500]">{question}</h1>
+          <h1 className="font-poppins w-[92%] md:text-[1.3vw] text-[14px] font-[500]">{question}</h1>
           <button onClick={toggleOpen} className="scale-90">
             <img
-              className={`transform transition-transform duration-300 h-4 ease-out ${
+              className={`transform transition-transform duration-300 h-4 w-auto ease-out ${
                 isOpen ? "[transform:rotateX(180deg)]" : ""
               }`}
               src="Images/arrowUp.png"

@@ -57,7 +57,7 @@ const WhatWeCover = () => {
   return (
     <div className="mt-16">
       <Heading head="Hiring Roles" />
-      <div className="mt-6 w-full max-md:p-2 md:hidden">
+      <div className="md:mt-6 -mt-8 w-full max-md:p-2 md:hidden">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}

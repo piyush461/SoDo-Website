@@ -4,11 +4,11 @@ import Heading from "../Components/Heading";
 const OurModels = () => {
 
   return (
-    <div id="ourModels">
+    <div id="ourModels" className="pt-6">
       <div className="text-center text-nowrap">
         <Heading head="Our Models" />
       </div>
-      <div className="flex justify-center items-center max-md:w-full max-md:flex-col gap-6 pt-10">
+      <div className="flex justify-center items-center max-md:w-full max-md:flex-col gap-6 md:pt-10 pt-4">
         <div className="gradientBorder md:w-[36%] md:min-w-80 p-[2.8px] rounded-[18px]">
           <div
             className={

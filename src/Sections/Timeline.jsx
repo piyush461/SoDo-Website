@@ -34,7 +34,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="mt-16" id="timeline">
+    <div className="mt-12" id="timeline">
       <div className="text-center">
         <Heading head="Our Process" />
       </div>
