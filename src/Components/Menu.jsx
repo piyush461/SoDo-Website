@@ -9,8 +9,8 @@ function Menu({ isOpen, setIsOpen }) {
   };
   return (
     <div
-      className={`h-44 w-full z-10 absolute bg-white shadow-lg font-[400] transition-all ease duration-500  flex flex-col justify-around ${
-        isOpen ? "top-20 left-0" : "top-20 -left-[100%]"
+      className={`h-44 w-full font-poppins z-10 absolute backdrop-blur-[5px] shadow-lg font-[400] transition-all ease duration-500  flex flex-col justify-around items-start px-8 ${
+        isOpen ? "top-20 left-0 opacity-100" : "top-20 -left-[100%] opacity-0"
       }`}>
       <button className={`transition-all ease duration-200 text-xl ${isOpen ? 'opacity-100' : 'opacity-0'}`} onClick={() => {
         setIsOpen(!isOpen)

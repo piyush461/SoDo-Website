@@ -8,26 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const WhatWeCover = () => {
-  const it = [
-    "Software Developer",
-    "Full Stack",
-    "Frontend",
-    "Backend",
-    "Software Architect",
-    "React.js",
-    "Vue.js",
-    "Node.js",
-    "Python",
-    "Java",
-    "AWS",
-    "DevOps",
-    "Product Manager",
-    "AI/ML",
-    ".NET",
-    "Manual Tester",
-    "Automation Tester",
-    "QA",
-  ];
+  const it = ["Software Developer", "Full Stack", "Frontend", "Backend", "MERN Stack", "MEAN Stack", "DevOps", "AI/ML", "QA", "Cloud"];
 
   const nonIt = [
     "HR",

@@ -11,15 +11,15 @@ const Footer = () => {
                 alt="SoDo logo"
               />
             </div>
-            <div className="h-20">
+            <div className="h-12">
               <img
-                className="h-[100%]"
+                className="h-[100%] ml-2"
                 src="Images/msForstartupLogo.svg"
                 alt=""
               />
             </div>
           </div>
-          <div className="h-16 relative -top-8 max-md:hidden">
+          <div className="h-16 relative -left-9 -top-8 max-md:hidden">
             <img
               className="h-24 object-contain"
               src="Images/sodo.svg"
@@ -33,17 +33,12 @@ const Footer = () => {
               alt=""
             />
           </div>
-          <div className="flex gap-2 mt-6 items-center">
+          <div className="flex gap-4 mt-6 items-center max-md:hidden">
             <div>
               <a
                 href="https://www.linkedin.com/company/sodohire"
                 target="_blank">
                 <img src="Images/linkedIn.svg" alt="" />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/sodohire" target="_blank">
-                <img src="Images/fb.svg" alt="" />
               </a>
             </div>
             <div>
@@ -56,10 +51,15 @@ const Footer = () => {
                 <img src="Images/x.png" alt="X" />
               </a>
             </div>
+            <div>
+              <a href="https://www.instagram.com/sodohire" target="_blank">
+                <img src="Images/fb.svg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="md:hidden">
-          <div className="flex justify-between">
+          <div className="flex justify-between ml-2">
             <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
               <h3 className="text-black mb-2 font-semibold">Learn More</h3>
               <h3>
@@ -78,7 +78,7 @@ const Footer = () => {
               <h3>Terms</h3>
             </div>
           </div>
-          <div>
+          <div className="ml-2">
             <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
               <h3 className="text-black mt-4 font-semibold">Contact Us</h3>
               <h3>HQ OFFICE</h3>
@@ -127,8 +127,30 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr />
-      <div className="flex items-center justify-center font-poppins h-10 font-[500] text-sm max-md:hidden">
+        <div className="flex gap-2 mt-6 items-center justify-center my-4 md:hidden">
+          <div>
+            <a href="https://www.linkedin.com/company/sodohire" target="_blank">
+              <img src="Images/linkedIn.svg" alt="" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/sodorecruit/" target="_blank">
+              <img src="Images/instagram.svg" alt="" />
+            </a>
+          </div>
+          <div>
+            <a href="https://x.com/SoDoHire" target="_blank">
+              <img src="Images/x.png" alt="X" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/sodohire" target="_blank">
+              <img src="Images/fb.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      <div className="h-[1.2px]  w-full thHr"></div>
+      <div className="flex items-center justify-center font-poppins h-14 font-[500] text-sm max-md:hidden">
         © 2025 | SoDoBusiness Tech Private Limited | All Right Reserved
       </div>
       <div className="flex items-center justify-center flex-col font-poppins h-16 font-[500] text-xs max-md:text-[14px] md:hidden">

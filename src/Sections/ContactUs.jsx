@@ -24,9 +24,9 @@ const ContactUs = () => {
     setIsFormValid(allFieldsFilled && emailValid);
 
     if (allFieldsFilled && emailValid) {
-      submitButton.current.classList.add('contactButton');
+      submitButton.current.classList.add('animate-contactButton');
     } else {
-      submitButton.current.classList.remove('contactButton');
+      submitButton.current.classList.remove('animate-contactButton');
     }
   }, [name, company, email, number, message]);
 
@@ -98,63 +98,63 @@ const ContactUs = () => {
           <div className="h-[100%] w-[100%] flex flex-col gap-6">
             <div className="flex flex-wrap font-poppins max-md:flex-col gap-2 md:gap-8">
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-4">Name</label>
+                <label className="block md:text-lg">Name</label>
                 <input
                   name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-2 md:py-[17px] placeholder:text-[#B7B7B7] px-4 md:w-[100%] w-full text-sm font-normal rounded-[12px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] placeholder:text-[#B7B7B7] px-4 md:w-[100%] w-full text-sm font-normal rounded-[7px] md:rounded-[16px]"
                   type="text"
                   placeholder="Enter your name"
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-4">Company</label>
+                <label className="block md:text-lg">Company</label>
                 <input
                   name="company"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-2 md:py-[17px] placeholder:text-[#B7B7B7] px-4 w-[100%] text-sm font-normal rounded-[12px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] placeholder:text-[#B7B7B7] px-4 w-[100%] text-sm font-normal rounded-[7px] md:rounded-[16px]"
                   type="text"
                   placeholder="Enter company name"
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-4">Business Email</label>
+                <label className="block md:text-lg">Business Email</label>
                 <input
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-2 md:py-[17px] px-4 placeholder:text-[#B7B7B7] w-[100%] text-sm font-normal rounded-[12px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] px-4 placeholder:text-[#B7B7B7] w-[100%] text-sm font-normal rounded-[7px] md:rounded-[16px]"
                   type="email"
                   placeholder="Enter your email"
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-4">Phone Number</label>
+                <label className="block md:text-lg">Phone Number</label>
                 <input
                   name="number"
                   value={number}
                   onChange={(e) => setNumber(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-2 md:py-[17px] w-[100%] placeholder:text-[#B7B7B7] px-4 text-sm font-normal rounded-[12px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] w-[100%] placeholder:text-[#B7B7B7] px-4 text-sm font-normal rounded-[7px] md:rounded-[16px]"
                   type="tel"
                   placeholder="Enter your number"
                 />
               </div>
             </div>
             <div className="">
-              <label className="md:text-lg font-poppins ml-4 block">Message</label>
+              <label className="md:text-lg font-poppins block">Message</label>
               <textarea
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Write your message..."
-                className="border outline-[#0B99FF] mb-7 mt-2 py-2 md:py-[17px] px-4 text-sm placeholder:text-[#B7B7B7] font-normal h-[95px] resize-none w-full rounded-[12px] md:rounded-[16px]"
+                className="border outline-[#0B99FF] mb-7 mt-2 py-3 md:py-[17px] px-4 text-sm placeholder:text-[#B7B7B7] font-normal h-[95px] resize-none w-full rounded-[7px] md:rounded-[16px]"
               ></textarea>
               <button
                 type="submit"
                 ref={submitButton}
-                className="submitButton w-32 h-12 rounded-xl before:rounded-xl text-white bg-black"
+                className="submitButton contactButton w-32 h-12 rounded-xl before:rounded-xl text-white bg-black"
               >
                 Hire Now
               </button>

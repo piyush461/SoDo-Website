@@ -2,10 +2,10 @@ import Heading from "../Components/Heading";
 
 const WhatWeDo = () => {
   const cardCaption1 =
-    "Access top professionals vetted through a rigorous process.";
-  const cardCaption2 = "Get guidance from onboarding to project completion.";
+    "Forget weeks of searching. SoDo delivers vetted, reliable talent within a day, so you stay agile and meet your goals faster.";
+  const cardCaption2 = "We get it—quality matters. So every professional, agency, and freelancer in our network has been rigorously assessed to ensure they meet our standards for skill, reliability, and work ethic.";
   const cardCaption3 =
-    "Connect with verified candidates and speed up recruitment.";
+    "SoDo was designed with fast-moving companies in mind. From on-demand hires to ongoing support, our goal is simple: to help you grow without the usual hiring headaches.";
   return (
     <div className="relative md:mt-10 mt-16">
       <img
@@ -25,29 +25,16 @@ const WhatWeDo = () => {
       />
       <Heading head="What we do differently" />
       <div className="flex flex-shrink-0 justify-between gap-4 mt-8 max-md:flex-col">
-        <div className="thCard md:h-[325px] flex-1 flex flex-col justify-between max-md:gap-14 rounded-2xl p-6 pt-8 font-poppins">
-          <h3>
-            <sub className="text-[14px]">top</sub>
-            <span className="text-6xl font-semibold"> 1% </span>
-          </h3>
+        <div className="thCard h-[300px] flex-1 flex flex-col justify-between max-md:gap-14 rounded-2xl p-6 pt-8 font-poppins">
+          <h3 className="text-lg font-semibold text-center">Where speed meets excellence</h3>
           <h3 className="text-[1.14rem]  font-roboto">{cardCaption1}</h3>
         </div>
-        <div className="thCard md:h-[325px] flex-1 flex flex-col justify-between max-md:gap-14 rounded-2xl p-5 pt-8 font-poppins">
-          <h3>
-            {" "}
-            <span className="text-6xl font-semibold">
-              360<sup>o</sup>
-            </span>{" "}
-            <sub className="text-[14px]">support</sub>
-          </h3>
+        <div className="thCard h-[300px] flex-1 flex flex-col justify-between max-md:gap-14 rounded-2xl p-5 pt-8 font-poppins">
+          <h3 className="text-lg font-semibold text-center">Rigorous Vetting, Every Time</h3>
           <h3 className="text-lg font-roboto">{cardCaption2}</h3>
         </div>
-        <div className="thCard md:h-[325px] flex-1 flex flex-col justify-between max-md:gap-14 rounded-2xl p-6 pt-8 font-poppins">
-          <h3>
-            {" "}
-            <span className="text-6xl font-semibold">2x</span>{" "}
-            <sub className="text-[14px]">faster</sub>
-          </h3>
+        <div className="thCard h-[300px] flex-1 flex flex-col justify-between max-md:gap-14 rounded-2xl p-6 pt-8 font-poppins">
+          <h3 className="text-lg font-semibold text-center">Built differently</h3>
           <h3 className="text-lg font-roboto">{cardCaption3}</h3>
         </div>
       </div>

@@ -20,21 +20,19 @@ const Header = ({ isOpen, setIsOpen }) => {
             <a href="#startups">For Startups</a>
           </h2>
         </div>
-        <div className="md:hidden h-full w-8 flex justify-center items-center">
+        <div className="md:hidden h-fit w-7">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex flex-col h-9 w-full justify-around"
+            className="flex flex-col h-7 w-full justify-around"
           >
             <div
-              className={`w-full h-[3px] rounded-md bg-black transform origin-bottom-left transition-all ease 100 ${
-                isOpen
-                  ? "rotate-[45deg] -translate-x-[2px] -translate-y-[5px]"
-                  : "rotate-0 translate-x-0 translate-y-0"
+              className={`w-full h-[2.7px] rounded-md bg-gray-800 transition-all ease-in-out  ${
+                isOpen ? "animate-crossLeft" : "animate-crossLeftReverse"
               }`}
             ></div>
             <div
-              className={`w-full h-[3px] rounded-md bg-black transform origin-bottom-left transition-all ease 100 ${
-                isOpen ? "-rotate-[45deg]" : "rotate-0"
+              className={`w-full h-[2.7px] rounded-md bg-gray-800 transform transition-all ease  ${
+                isOpen ? 'animate-crossRight':'animate-crossRightReverse'
               }`}
             ></div>
           </button>

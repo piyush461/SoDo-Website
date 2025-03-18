@@ -41,13 +41,13 @@ const HeroSection = () => {
               trusted by 120+ companies
             </h4>
           </div> */}
-          <div className="poppins-semibold md:pt-6">
+          <div className="font-poppins">
             <h1 className="text-[5.3vw] max-md:text-4xl font-semibold ">Hire Top 1%</h1>
-            <span className="heroHead text-[5.3vw] max-md:text-4xl leading-tight text-nowrap">
+            <span className="heroHead text-[5.3vw] block mt-3 max-md:text-4xl text-nowrap">
               IT & non-IT Talent
             </span>
           </div>
-          <h3 className="font-roboto font-light text-[1.6vw] max-md:text-[14px] md:my-10 my-4">
+          <h3 className="font-roboto font-light text-[1.6vw] max-md:text-[14px]  md:my-10 my-5">
             Elevating companies with top quality multi-layer screened <br />{" "}
             talent and resources for contract roles in 24 hours.
           </h3>
@@ -55,16 +55,16 @@ const HeroSection = () => {
             <Button content="Hire Talent" />
           </a>
         </div>
-        <div className="flex justify-end pr-12 md:hidden">
+        <div className="flex justify-end pr-7 md:hidden">
           <div className="relative">
             <img
               className="h-72 rounded-br-[100px] w-auto"
               src="Images\hero.jpg"
               alt=""
             />
-            <div className="absolute -left-[90px] bottom-[3vw]">
+            <div className="absolute -left-[60px] bottom-[3vw]">
               <img
-                className="h-28 drop-shadow-md w-auto"
+                className="h-24 drop-shadow-md w-auto"
                 src="\Images\Applications.svg"
                 alt=""
               />

@@ -338,14 +338,15 @@ body {
 }
 
 .thHr {
-  background: rgb(180, 72, 58);
   background: linear-gradient(
-    34deg,
-    #FB8B40,
-    #8840FB,
-    #FB8B40,
+    to right,
+    #8840FB 20%,
+    #FB8B40 40%,
+    #FB8B40 60%,
+    #8840FB 80%
   );
 }
+
 
 /* %%%%%%%%%%%%%%%%%%%%%% OUR SERVICE SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
@@ -403,7 +404,6 @@ body {
 
 .testimonialCard {
   position: relative;
-  background-color: white;
 }
 
 .bordergradient {
@@ -560,6 +560,8 @@ body {
   position: relative;
 }
 
+
+
 .contactButton::before{
   content: '';
   height: 107%;
@@ -569,8 +571,93 @@ body {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  background-image: conic-gradient(from var(--angle),transparent 75%, blue , purple, orange);
+  background-image: conic-gradient(from var(--angle), #8840FB, #FB8B40, #FB8B40, #8840FB);
+}
+
+.animate-contactButton::before{
+  background-image: conic-gradient(from var(--angle),transparent 75%,  #FB8B40, #FB8B40, #8840FB );
   animation: spin 1.5s linear infinite;
   animation-delay: -200s;
 }
 
+@keyframes crossLeft {
+  0% {
+    transform: translateY(0px);
+    transform: rotate(0deg);
+    opacity: 100%;
+  }
+  30% {
+    transform: translateY(7px) rotate(0deg);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(6px) rotate(-45deg);
+    transform-origin: center;
+    opacity: 100%;
+  }
+}
+
+@keyframes crossRight {
+  0% {
+    transform: translateY(0px);
+    transform: rotate(0deg);
+    opacity: 100%;
+  }
+  30% {
+    transform: translateY(-7px) rotate(0deg);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(-8px) rotate(45deg);
+    transform-origin: center;
+    opacity: 100%;
+  }
+}
+
+@keyframes crossLeftReverse {
+  0% {
+    transform: translateY(6px) rotate(-45deg);
+    transform-origin: center;
+    opacity: 100%;
+  }
+  30% {
+    transform: translateY(7px) rotate(0deg);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+@keyframes crossRightReverse {
+  0% {
+    transform: translateY(-8px) rotate(45deg);
+    transform-origin: center;
+    opacity: 100%;
+  }
+  30% {
+    transform: translateY(-7px) rotate(0deg);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+.animate-crossLeft {
+  animation: crossLeft 0.5s ease forwards;
+}
+
+.animate-crossRight {
+  animation: crossRight 0.5s ease forwards;
+}
+
+.animate-crossLeftReverse {
+  animation: crossLeftReverse 0.5s ease forwards;
+}
+
+.animate-crossRightReverse {
+  animation: crossRightReverse 0.5s ease forwards;
+}

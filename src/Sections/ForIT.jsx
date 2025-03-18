@@ -10,12 +10,10 @@ const ForIT = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const itPositionTop = itRef.current.getBoundingClientRect().top;
       const itPositionBottom = itRef.current.getBoundingClientRect().bottom;
       const startupPositionTop = startupRef.current.getBoundingClientRect().top;
       const startupPositionBottom = startupRef.current.getBoundingClientRect().bottom;
       const mncsPositionTop = mncsRef.current.getBoundingClientRect().top;
-      const mncsPositionBottom = mncsRef.current.getBoundingClientRect().bottom;
       const viewportHeight = window.innerHeight / 2;
 
       gradball1Ref.current.style.opacity = '0';
@@ -52,7 +50,7 @@ const ForIT = () => {
             </div>
           </h3>
           <h3 ref={startupRef} className="font-poppins md:text-[3.4vw] text-xl font-semibold flex items-center text-[#464454]">
-            For Companies
+          For Enterprises
             <div className="pl-3 pt-2">
               <img ref={gradball2Ref} className="rotateBall" src="Images/graBall.svg" alt="" style={{ opacity: 0 }} />
             </div>
