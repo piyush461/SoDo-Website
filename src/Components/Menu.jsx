@@ -9,7 +9,7 @@ function Menu({ isOpen, setIsOpen }) {
   };
   return (
     <div
-      className={`h-44 w-full font-poppins z-10 absolute backdrop-blur-[5px] shadow-lg font-[400] transition-all ease duration-500  flex flex-col justify-around items-start px-8 ${
+      className={`h-44 w-full font-poppins z-10 absolute backdrop-blur-[15px] shadow-lg font-[400] transform transition-all ease duration-700 flex flex-col justify-around items-start px-8 ${
         isOpen ? "top-20 left-0 opacity-100" : "top-20 -left-[100%] opacity-0"
       }`}>
       <button className={`transition-all ease duration-200 text-xl ${isOpen ? 'opacity-100' : 'opacity-0'}`} onClick={() => {

@@ -25,7 +25,9 @@ const Timeline = () => {
       lines.forEach((line) => {
         const lineRect = line.getBoundingClientRect();
         line.style.opacity =
-          lineRect.top + 10 < viewportCenter && lineRect.bottom > viewportCenter ? "100%" : "20%";
+          lineRect.top + 10 < viewportCenter && lineRect.bottom > viewportCenter
+            ? "100%"
+            : "20%";
       });
     };
 
@@ -171,23 +173,25 @@ const Timeline = () => {
               desc="Schedule interviews with your preferred talent or resources and trust SoDo for end-to-end HR support for a smooth and productive recruitment experience."
             />
 
-            <div className="flex justify-center gap-3">
-              <Card>
-                <div className="flex flex-col items-center h-40 py-2 px-[16px]">
-                  <img className="h-[60px]" src="Images/jasmine.jpg" alt="" />
-                  <h1 className="font-poppins text-sm text-nowrap mt-2 font-bold">
-                    Jasmine Taylor
-                  </h1>
-                  <h3 className="text-xs mb-1 font-roboto font-[400]">
-                    Product Designer
-                  </h3>
-                  <div className="bg-[#e8e6ff] font-[400] font-roboto text-[10px] p-2 px-3 rounded-lg w-fit">
-                    Onboarding
+            <div className="flex justify-center">
+              <div className="w-full px-5">
+                <Card>
+                  <div className="flex flex-col items-center gap-1 h-32 py-2">
+                    <img className="h-[38px]" src="Images/jasmine.jpg" alt="" />
+                    <h1 className="font-poppins text-[12px] text-nowrap mt-2 font-bold">
+                      Jasmine Taylor
+                    </h1>
+                    <h3 className="text-[10px] mb-1 font-roboto font-[400]">
+                      Product Designer
+                    </h3>
+                    <div className="bg-[#e8e6ff] font-[400] font-roboto text-[9px] p-1 px-2 rounded-lg w-fit">
+                      Onboarding
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </div>
               <Card>
-                <div className="overflow-hidden h-40 relative">
+                <div className="overflow-hidden h-32 relative">
                   <img
                     className="scale-95  absolute top-4"
                     src="Images/graph1.svg"
@@ -370,7 +374,7 @@ const Timeline = () => {
                   alt=""
                 />
                 <img
-                  className="scale-95 pt-20"
+                  className="scale-75 pt-20"
                   src="Images/graph2.svg"
                   alt=""
                 />

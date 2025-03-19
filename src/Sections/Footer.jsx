@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="md:hidden">
           <div className="flex justify-between ml-2">
             <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
-              <h3 className="text-black mb-2 font-semibold">Learn More</h3>
+              <h3 className="text-black font-semibold">Learn More</h3>
               <h3>
                 <a href="#faqs">FAQs</a>
               </h3>
@@ -73,16 +73,15 @@ const Footer = () => {
               </h3>
             </div>
             <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
-              <h3 className="text-black mb-2 font-semibold">Resources</h3>
+              <h3 className="text-black font-semibold">Resources</h3>
               <h3>Privacy Policy</h3>
               <h3>Terms</h3>
             </div>
           </div>
           <div className="ml-2">
             <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
-              <h3 className="text-black mt-4 font-semibold">Contact Us</h3>
-              <h3>HQ OFFICE</h3>
-              <h3>202, 2nd Floor, EF3 Mall, Sector</h3>
+              <h3 className="text-black mt-3 font-semibold">Contact Us</h3>
+              <h3>HQ OFFICE, 202, 2nd Floor, EF3 Mall, Sector</h3>
               <h3>20A, Faridabad, Haryana 121002</h3>
             </div>
             <h3 className="text-xs text-[#464454] mt-3 font-[500]">

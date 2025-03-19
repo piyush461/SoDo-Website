@@ -622,7 +622,7 @@ body {
   }
   30% {
     transform: translateY(7px) rotate(0deg);
-    opacity: 30%;
+    opacity: 10%;
   }
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -638,7 +638,7 @@ body {
   }
   30% {
     transform: translateY(-7px) rotate(0deg);
-    opacity: 30%;
+    opacity: 10%;
   }
   100% {
     transform: translateY(0px) rotate(0deg);

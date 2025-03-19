@@ -75,9 +75,8 @@ const ContactUs = () => {
     <div id="contact" className="mt-24 h-auto flex justify-between max-md:flex-col">
       <div className="md:w-[35%] mt-4">
         <Heading head="Contact us today" />
-        <h3>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius sint at
-          accusamus, quasi deserunt maiores.
+        <h3 className="-mt-3">
+        Ready for your next perfect hire? Reach out to us to explore how SoDo can elevate and support your hiring needs.
         </h3>
         <ToastContainer
           position="top-right"
