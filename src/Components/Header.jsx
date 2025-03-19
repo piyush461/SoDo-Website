@@ -8,16 +8,16 @@ const Header = ({ isOpen, setIsOpen }) => {
 
   return (
       <nav className="w-full h-20 !z-50 bg-white flex items-center justify-between px-20 max-md:px-7">
-        <div className="flex gap-6 font-poppins text-md">
-          <img className="mr-8" src="Images/logo.svg" alt="Logo" />
-          <h2 className="navs max-md:hidden">
-            <a href="#companies">For Companies</a>
+        <div className="flex gap-4 font-poppins text-md">
+          <img className="mr-8 " src="Images/logo.svg" alt="Logo" />
+          <h2 className="navs max-md:hidden mt-1 text-black">
+            <a href="#companies">For MNCs</a>
           </h2>
-          <h2 className="navs max-md:hidden">
-            <a href="#mncs">For MNCs</a>
+          <h2 className="navs mt-1 text-black max-md:hidden">
+            <a href="#mncs">For Enterprises</a>
           </h2>
-          <h2 className="navs max-md:hidden">
-            <a href="#startups">For Startups</a>
+          <h2 className="navs mt-1 text-black max-md:hidden">
+            <a href="#startups">For Companies</a>
           </h2>
         </div>
         <div className="md:hidden h-fit w-7">
@@ -37,12 +37,12 @@ const Header = ({ isOpen, setIsOpen }) => {
             ></div>
           </button>
         </div>
-        <div className="flex gap-6 font-poppins max-md:hidden">
+        <div className="flex gap-6 mt-1 font-poppins max-md:hidden">
           <h2 className="navs">
-            <button onClick={() => scrollToSection("ourServices")}>Our Services</button>
+            <button onClick={() => scrollToSection("ourServices")}>Offerings</button>
           </h2>
           <h2 className="navs">
-            <button onClick={() => scrollToSection("timeline")}>Our Process</button>
+            <button onClick={() => scrollToSection("timeline")}>Process</button>
           </h2>
           <h2 className="navs">
             <button onClick={() => scrollToSection("contact")}>Contact</button>

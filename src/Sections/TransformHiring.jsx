@@ -14,7 +14,7 @@ const TransformHiring = () => {
         <div className="flex justify-between">
           <div className="w-[100%] h-80 max-md:hidden"></div>
           <div className="w-[100%]">
-            <h2 className="font-roboto md:text-[2vw] text-md">{desc}</h2>
+            <h2 className="font-roboto md:text-[2vw] -ml-5 text-md">{desc}</h2>
           </div>
         </div>
       </div>

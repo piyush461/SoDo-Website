@@ -50,7 +50,7 @@ const WhatWeCover = () => {
             <Card>
               <div className="h-64 w-full flex flex-col justify-between p-6">
                 <div className="flex md:justify-between justify-around gap-20 items-center">
-                  <img src="Images/cover1.svg" alt="" />
+                  <img src="Images/code.png" alt="" />
                   <h2 className="text-xl font-semibold font-poppins">IT</h2>
                 </div>
                 <div className="flex flex-1 flex-col justify-end">
@@ -67,7 +67,7 @@ const WhatWeCover = () => {
             <Card>
               <div className="h-64 w-full flex flex-col justify-between p-6">
                 <div className="flex justify-between items-center">
-                  <img src="Images/cover2.svg" alt="" />
+                  <img src="Images/present.png" alt="" />
                   <h2 className="text-xl font-semibold font-poppins">Non-IT</h2>
                 </div>
                 <div className="flex flex-1 flex-col md:justify-between justify-end">
@@ -84,7 +84,7 @@ const WhatWeCover = () => {
             <Card>
               <div className="h-64 w-full flex flex-col justify-between p-6">
                 <div className="flex justify-between w-full items-center">
-                  <img src="Images/cover3.svg" alt="" />
+                  <img src="Images/speech.png" alt="" />
                   <h2 className="text-xl md:hidden font-semibold font-poppins">
                     Leadership Hiring
                   </h2>
@@ -106,7 +106,7 @@ const WhatWeCover = () => {
           <Card>
             <div className="h-64 w-72 md:h-80 md:w-auto flex flex-col justify-between p-6">
               <div className="flex md:justify-between justify-around gap-20 items-center">
-                <img src="Images/cover1.svg" alt="" />
+                <img className="h-14" src="Images/code.png" alt="" />
               </div>
               <div className="flex flex-1 flex-col md:justify-between justify-end">
                 <h2 className="text-3xl font-semibold font-poppins py-4">
@@ -125,7 +125,7 @@ const WhatWeCover = () => {
           <Card>
             <div className="h-80 w-auto flex flex-col justify-between p-6">
               <div className="flex justify-between items-center">
-                <img src="Images/cover2.svg" alt="" />
+                <img className="h-14" src="Images/present.png" alt="" />
               </div>
               <div className="flex flex-1 flex-col justify-between">
                 <h2 className="text-3xl font-semibold font-poppins py-4">
@@ -144,10 +144,10 @@ const WhatWeCover = () => {
           <Card>
             <div className="h-80 w-auto  flex flex-col justify-between p-6">
               <div className="flex justify-between items-center">
-                <img src="Images/cover3.svg" alt="" />
+                <img className="h-14" src="Images/speech.png" alt="" />
               </div>
-              <div className="flex flex-1 flex-col justify-between">
-                <h2 className="text-3xl font-semibold font-poppins py-4 content-">
+              <div className="flex flex-1 flex-col justify-start gap-10">
+                <h2 className="text-3xl font-semibold font-poppins py-4">
                   Leadership Hiring
                 </h2>
                 <div className="flex flex-wrap">

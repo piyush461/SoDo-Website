@@ -2,7 +2,7 @@ import Button from "./Button";
 const HeroSection = () => {
   return (
     <div className="flex justify-between pt-8 w-full relative">
-      <div className="absolute top-[25%] left-[30%] -z-10">
+      {/* <div className="absolute top-[25%] left-[30%] -z-10">
         <img
           className="h-[500px] w-[500px]"
           src="Images/yellowEllipse.svg"
@@ -15,7 +15,7 @@ const HeroSection = () => {
           src="Images/blueEllipse.svg"
           alt=""
         />
-      </div>
+      </div> */}
       <div className="md:mt-9 ">
         <div>
           {/* <div className="flex gap-2 items-center">
@@ -42,14 +42,13 @@ const HeroSection = () => {
             </h4>
           </div> */}
           <div className="font-poppins">
-            <h1 className="text-[5.3vw] max-md:text-4xl font-semibold ">Hire Top 1%</h1>
-            <span className="heroHead text-[5.3vw] block mt-3 max-md:text-4xl text-nowrap">
-              IT & non-IT Talent
+            <h1 className="text-[5vw] max-md:text-4xl font-semibold ">Hire Top 1%</h1>
+            <span className="heroHead text-black text-[5vw] block mt-1 max-md:text-4xl text-nowrap">
+              IT & Non-IT Talent
             </span>
           </div>
-          <h3 className="font-roboto font-light text-[1.6vw] max-md:text-[14px]  md:my-10 my-5">
-            Elevating companies with top quality multi-layer screened <br />{" "}
-            talent and resources for contract roles in 24 hours.
+          <h3 className="font-poppins font-light text-gray-800 text-[1.18vw] max-md:text-[14px]  md:mt-7 mb-14 my-5">
+          We elevate MNCs, enterprises and companies recruit top-tier <br /> talent across IT, Non-IT, Executive and Leadership roles all within 24 hours.
           </h3>
           <a href="#contact"  className="max-md:hidden">
             <Button content="Hire Talent" />
@@ -65,7 +64,7 @@ const HeroSection = () => {
             <div className="absolute -left-[60px] bottom-[3vw]">
               <img
                 className="h-24 drop-shadow-md w-auto"
-                src="\Images\Applications.svg"
+                src="\Images\numberCard.svg"
                 alt=""
               />
             </div>
@@ -92,14 +91,14 @@ const HeroSection = () => {
       <div className="flex justify-end max-md:hidden">
         <div className="relative">
           <img
-            className="h-[88%] rounded-br-[100px] w-auto"
+            className="h-[441px] rounded-br-[100px] w-auto"
             src="Images\hero.jpg"
             alt=""
           />
-          <div className="absolute -left-28 bottom-[7vw]">
+          <div className="absolute -left-28 bottom-[2vw]">
             <img
-              className="h-[13vw] w-auto"
-              src="\Images\Applications.svg"
+              className="h-[13vw] w-auto drop-shadow-lg"
+              src="\Images\numberCard.png"
               alt=""
             />
           </div>

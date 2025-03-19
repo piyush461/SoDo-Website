@@ -17,7 +17,7 @@ body {
 }
 
 *{
-  color: rgb(54, 51, 51);
+  color: #1D2434;
 }
 
 .roboto-light {
@@ -254,7 +254,7 @@ body {
 
 .heroHead {
   font-weight: bold;
-  background-image: linear-gradient(to right, #fb8b40, #8840fb);
+  background-image: linear-gradient(to right, #3370FB, #5E58FB , #8840FB);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -262,7 +262,7 @@ body {
 
 .hireTalent {
   position: relative;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 @property --angle {
@@ -291,7 +291,7 @@ body {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  border-radius: 14px;
+  border-radius: 12px;
   
   opacity: 0;
 }
@@ -299,7 +299,7 @@ body {
 .hireTalent::before,
 .hireTalentafter {
   opacity: 100;
-  animation: spin 1.6s linear infinite;
+  animation: spin 3s linear infinite;
   animation-delay: -2s;
 }
 
@@ -339,11 +339,10 @@ body {
 
 .thHr {
   background: linear-gradient(
-    to right,
-    #8840FB 20%,
-    #FB8B40 40%,
-    #FB8B40 60%,
-    #8840FB 80%
+    to left,
+    #3370FB,
+    #8840FB,
+    #FB8B40
   );
 }
 
