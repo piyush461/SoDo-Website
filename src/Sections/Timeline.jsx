@@ -29,6 +29,7 @@ const Timeline = () => {
             ? "100%"
             : "20%";
       });
+      
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -51,7 +52,7 @@ const Timeline = () => {
           </div>
           <div>
             <img
-              className="md:h-[244px] h-[415px] line opacity-20 rotate-180"
+              className="md:h-[244px] h-[415px] w-1 line opacity-20 rotate-180"
               src="Images/timelineHr.svg"
               alt=""
             />
@@ -79,7 +80,7 @@ const Timeline = () => {
           </div>
           <div>
             <img
-              className="mt-1 h-76 opacity-20 line rotate-180"
+              className="mt-1 h-80 opacity-20 min:w-1 line rotate-180"
               src="Images/timelineHr.svg"
               alt=""
             />
@@ -120,7 +121,7 @@ const Timeline = () => {
               </div>
             </Card>
           </div>
-          <div className="flex flex-col justify-center mt-5 gap-6">
+          <div className="flex flex-col justify-center -mt-2 gap-6">
             <Step
               stepno="Step 2"
               head="Receive screened profiles"
@@ -166,7 +167,7 @@ const Timeline = () => {
               </div>
             </Card>
           </div>
-          <div className="flex flex-col mt-6 justify-center gap-6">
+          <div className="flex flex-col mt-1 justify-center gap-6">
             <Step
               stepno="Step 3"
               head="Select with confidence"

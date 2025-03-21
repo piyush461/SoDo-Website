@@ -118,7 +118,7 @@ const WhatWeCover = () => {
         <div className="flex-1">
           <Card>
             <div className="h-64 w-72 md:h-80 md:w-auto flex flex-col justify-between p-6">
-              <div className="flex justify-between items-center">
+              <div className="flex items-center gap-5">
                 <img className="h-14" src="Images/code.png" alt="" />
                 <h2 className="text-[25px] font-semibold font-poppins py-4">IT</h2>
               </div>
@@ -135,7 +135,7 @@ const WhatWeCover = () => {
         <div className="flex-1">
           <Card>
             <div className="h-80 w-auto flex flex-col justify-between p-6">
-              <div className="flex justify-between items-center">
+              <div className="flex items-center gap-5">
                 <img className="h-14" src="Images/present.png" alt="" />
                 <h2 className="text-[25px] font-semibold font-poppins py-4">
                   Non-IT
@@ -154,7 +154,7 @@ const WhatWeCover = () => {
         <div className="flex-1">
           <Card>
             <div className="h-80 w-auto  flex flex-col justify-between p-6">
-              <div className="flex justify-between items-center">
+              <div className="flex items-center gap-5">
                 <img className="h-14" src="Images/speech.png" alt="" />
                 <h2 className="text-[25px] font-semibold font-poppins py-4">
                   Leadership Hiring

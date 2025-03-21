@@ -120,7 +120,7 @@ const ContactUs = () => {
                   name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] placeholder:text-[#B7B7B7] px-4 md:w-[100%] w-full text-sm font-normal rounded-[7px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] placeholder:text-[#B7B7B7] px-4 md:w-[100%] w-full text-sm font-normal rounded-[7px] md:rounded-xl"
                   type="text"
                   placeholder="Enter your name"
                 />
@@ -131,7 +131,7 @@ const ContactUs = () => {
                   name="company"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] placeholder:text-[#B7B7B7] px-4 w-[100%] text-sm font-normal rounded-[7px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] placeholder:text-[#B7B7B7] px-4 w-[100%] text-sm font-normal rounded-[7px] md:rounded-xl"
                   type="text"
                   placeholder="Enter company name"
                 />
@@ -142,7 +142,7 @@ const ContactUs = () => {
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] px-4 placeholder:text-[#B7B7B7] w-[100%] text-sm font-normal rounded-[7px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] px-4 placeholder:text-[#B7B7B7] w-[100%] text-sm font-normal rounded-[7px] md:rounded-xl"
                   type="email"
                   placeholder="Enter your email"
                 />
@@ -153,7 +153,7 @@ const ContactUs = () => {
                   name="number"
                   value={number}
                   onChange={(e) => setNumber(e.target.value)}
-                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] w-[100%] placeholder:text-[#B7B7B7] px-4 text-sm font-normal rounded-[7px] md:rounded-[16px]"
+                  className="border outline-[#0B99FF] my-2 py-3 md:py-[17px] w-[100%] placeholder:text-[#B7B7B7] px-4 text-sm font-normal rounded-[7px] md:rounded-xl"
                   type="tel"
                   placeholder="Enter your number"
                 />
@@ -168,7 +168,7 @@ const ContactUs = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Describe your requirements. . ."
-                className="border outline-[#0B99FF] mb-7 mt-2 py-3 md:py-[17px] px-4 text-sm placeholder:text-[#B7B7B7] font-normal h-[95px] resize-none w-full rounded-[7px] md:rounded-[16px]"></textarea>
+                className="border outline-[#0B99FF] mb-7 mt-2 py-3 md:py-[17px] px-4 text-sm placeholder:text-[#B7B7B7] font-normal h-[95px] resize-none w-full rounded-[7px] md:rounded-xl"></textarea>
               <button
                 type="submit"
                 ref={submitButton}

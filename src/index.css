@@ -207,48 +207,33 @@ body {
 .navs {
   position: relative;
   cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
 }
 
 .navs::before {
   content: "";
   position: absolute;
-  top: 24px;
+  bottom: -5px;
+  left: 0;
   height: 2px;
-  opacity: 0;
-  width: 100%;
+  width: 0;
   background-image: linear-gradient(
     to right,
-    transparent 2%,
-    #f1ff00,
-    #ffd300,
-    #ffa61f,
-    #ff7a42,
-    #ff545c,
-    #f6396b,
-    #e61c7b,
-    #d1008b,
-    #c5009d,
-    #b100b2,
-    #9000c8,
-    #5613e0
+    #3370fb, #5e58fb, #8840fb
   );
-  z-index: -1;
+  transition: width 0.5s ease-in-out;
+  z-index: 1;
+  opacity: 1;
 }
 
 .navs:hover::before {
-  animation: navCol 1s ease forwards;
+  width: 100%;
 }
 
-@keyframes navCol {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-  }
-}
 
 /* %%%%%%%%%%%%%%%%%%%%% HERO SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
 
@@ -323,7 +308,7 @@ body {
   content: "";
   position: absolute;
   height: 101.3%;
-  width: 101%;
+  width: 101.1%;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -399,7 +384,7 @@ body {
 .gradientBorder {
   background-image: conic-gradient(
     from var(--angle),
-    #3370fb, #5e58fb, #8840fb
+    #3370fb, #8840fb, #fb8b40, #fb8b40 , #3370fb
   );
   animation: spin 2s infinite;
   animation-timing-function: cubic-bezier(1, 1, 1, 1);
@@ -525,7 +510,7 @@ body {
 /* %%%%%%%%%%%%%%%%%%%%%%% FAQ SECTION %%%%%%%%%%%%%%%%%%%%%%% */
 
 .faqBorder {
-  background-color: #e6f0ff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 0.4s ease;
 }
 

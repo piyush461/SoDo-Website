@@ -13,7 +13,7 @@ const OurServices = () => {
       <div className="md:mt-10 mt-6">
         <div className="serviceCard w-full rounded-[24px] before:rounded-[24px] flex justify-between items-center max-md:flex-col max-md:gap-6 max-md:p-6 p-16">
           <div className="md:w-[45%] w-full flex flex-col justify-between gap-6 ">
-            <h3 className="font-poppins font-semibold text-3xl">HRaaS & Recruitment</h3>
+            <h3 className="font-poppins font-semibold text-[4.9vw] md:text-3xl">HRaaS & Recruitment</h3>
             <p className="font-roboto max-md:text-sm text-lg">{recruitmentDesc}</p>
             {/* <Button content="Learn more" /> */}
           </div>
@@ -26,7 +26,7 @@ const OurServices = () => {
             <img src="Images/staffing.jpg" alt="" />
           </div>
           <div className="md:w-[45%] flex flex-col justify-between gap-8">
-            <h3 className="font-poppins font-semibold text-3xl">IT Resource Augmentation</h3>
+            <h3 className="font-poppins font-semibold text-[4.9vw] md:text-3xl">IT Resource Augmentation</h3>
             <p className="font-roboto text-lg max-md:text-sm">{staffingDesc}</p>
             {/* <button className="buttonAnimation w-32 h-12 rounded-xl text-white bg-black">
               Learn More

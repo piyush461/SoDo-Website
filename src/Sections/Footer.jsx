@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="h-20 max-md:hidden">
             <img
               className="h-[100%]"
-              src="Images/msForstartupLogo.svg"
+              src="Images/Microsoft.jpg"
               alt=""
             />
           </div>
