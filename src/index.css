@@ -548,7 +548,7 @@ body {
 
 .contactButton::before {
   content: "";
-  height: 107%;
+  height: 110%;
   width: 104%;
   position: absolute;
   top: 50%;

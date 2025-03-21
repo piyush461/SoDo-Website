@@ -13,9 +13,9 @@ const ContactUs = () => {
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
+  const [isToastVisible, setIsToastVisible] = useState(false);
   const form = useRef();
   const submitButton = useRef();
-  console.log(EMAILJS_PUBLIC_KEY)
 
   const isEmailValid = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -34,26 +34,36 @@ const ContactUs = () => {
     }
   }, [name, company, email, number, message]);
 
+  const showToast = (type, message) => {
+    if (!isToastVisible) {
+      setIsToastVisible(true);
+      toast[type](message, {
+        autoClose: 3000,
+        onClose: () => setIsToastVisible(false),
+      });
+    }
+  };
+
   const submitHandler = (e) => {
     e.preventDefault();
     if (!name) {
-      toast.error("Full Name is required.", { autoClose: 3000 });
+      showToast("error", "Full Name is required.");
       return;
     }
     if (!company) {
-      toast.error("Company Name is required.", { autoClose: 3000 });
+      showToast("error", "Company Name is required.");
       return;
     }
     if (!email || !isEmailValid(email)) {
-      toast.error("Please enter a valid email address.", { autoClose: 3000 });
+      showToast("error", "Please enter a valid email address.");
       return;
     }
     if (!number) {
-      toast.error("Phone Number is required.", { autoClose: 3000 });
+      showToast("error", "Phone Number is required.");
       return;
     }
     if (!message) {
-      toast.error("Message is required.", { autoClose: 3000 });
+      showToast("error", "Message is required.");
       return;
     }
 
@@ -78,7 +88,7 @@ const ContactUs = () => {
   return (
     <div
       id="contact"
-      className="mt-24 h-auto flex justify-between max-md:flex-col">
+      className="md:mt-24 mt-8 h-auto flex justify-between max-md:flex-col">
       <div className="md:w-[35%] mt-4">
         <Heading head="Contact us today" />
         <h3 className="my-2">
@@ -86,8 +96,9 @@ const ContactUs = () => {
           can elevate and support your hiring needs.
         </h3>
         <ToastContainer
+        limit={2}
           position="top-right"
-          autoClose={3000}
+          autoClose={1000}
           hideProgressBar={false}
           newestOnTop={false}
           closeOnClick={false}

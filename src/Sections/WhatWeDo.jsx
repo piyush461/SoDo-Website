@@ -7,7 +7,7 @@ const WhatWeDo = () => {
   const cardCaption3 =
     "SoDo is designed with fast-moving companies in mind. From on-demand hires to ongoing support, our goal is simple: to help you grow without the usual hiring headaches.";
   return (
-    <div className="relative md:mt-10 mt-16">
+    <div className="relative md:mt-24 mt-16">
       {/* <img
         className="absolute -left-40 top-20 scale-125 w-[50vw] -z-10"
         src="Images/yellowEllipse.svg"

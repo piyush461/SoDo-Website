@@ -46,14 +46,14 @@ const ForIT = () => {
   return (
     <div
       id="forIT"
-      className="flex justify-between gap-4 w-full items-center max-md:flex-col mt-20">
+      className="flex justify-between gap-4 w-full items-center max-md:flex-col md:mt-24 mt-16">
       <div className="flex md:flex-col md:justify-center max-md:w-full justify-between md:gap-24 max-md:items-center">
         <div className="flex flex-col gap-1 md:gap-6 flex-1">
           <h3
             ref={itRef}
             className="font-poppins md:text-[2.7vw] text-[15px] font-semibold flex items-center text-nowrap relative text-[#464454]">
             For MNCs
-            <div className="pl-3 pt-2">
+            <div className="pl-3">
               <img
                 ref={gradball1Ref}
                 className="rotateBall"
@@ -67,7 +67,7 @@ const ForIT = () => {
             ref={startupRef}
             className="font-poppins md:text-[2.7vw] text-[15px] font-semibold flex items-center text-[#464454]">
             For Enterprises
-            <div className="pl-3 pt-2">
+            <div className="pl-3">
               <img
                 ref={gradball2Ref}
                 className="rotateBall"
@@ -81,7 +81,7 @@ const ForIT = () => {
             ref={mncsRef}
             className="font-poppins md:text-[2.7vw] text-[15px] font-semibold flex items-center text-[#464454]">
             For Companies & Startups
-            <div className="pl-3 pt">
+            <div className="pl-3">
               <img
                 ref={gradball3Ref}
                 className="rotateBall"

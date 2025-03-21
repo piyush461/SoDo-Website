@@ -54,14 +54,14 @@ const HeroSection = () => {
             <Button content="Hire Talent" />
           </a>
         </div>
-        <div className="flex max-md:relative justify-end outline md:pr-7 md:hidden">
-          <div className="md:relative outline">
+        <div className="flex relative max-md:relative justify-end outline md:pr-7 md:hidden">
+          <div className="outline">
             <img
               className="w-[70vw] rounded-br-[100px]"
               src="Images\hero.jpg"
               alt=""
             />
-            <div className="absolute -left-[60px] bottom-[3vw]">
+            <div className="absolute left-0 bottom-[3vw]">
               <img
                 className="h-24 rounded-[20px] drop-shadow-md w-auto"
                 src="\Images\numberCard.jpg"

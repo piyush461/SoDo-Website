@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="md:mt-52 font-poppins mt-16 mb-5 w-full flex justify-between max-md:flex-col">
+      <div className="md:mt-40 font-poppins mt-16 mb-5 w-full flex justify-between max-md:flex-col">
         <div className="flex flex-col font-popins justify-between items-center max-md:flex-row pb-7">
           <div className="md:hidden flex flex-col">
             <div className="h-16">

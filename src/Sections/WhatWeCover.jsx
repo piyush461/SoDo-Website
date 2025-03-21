@@ -47,7 +47,7 @@ const WhatWeCover = () => {
   ];
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 md:mt-24">
       <Heading head="Hiring Roles" />
       <div className="md:mt-6 -mt-8 w-full max-md:p-2 md:hidden">
         <Swiper

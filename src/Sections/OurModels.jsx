@@ -4,7 +4,7 @@ import Heading from "../Components/Heading";
 const OurModels = () => {
 
   return (
-    <div id="ourModels" className="pt-6">
+    <div id="ourModels" className="pt-6 md:pt-0">
       <div className="text-center text-nowrap">
         <Heading head="Our Models" />
       </div>

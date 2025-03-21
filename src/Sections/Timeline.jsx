@@ -36,7 +36,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="mt-12" id="timeline">
+    <div className="md:mt-24" id="timeline">
       <div className="text-center">
         <Heading head="How it works?" />
       </div>
@@ -211,14 +211,14 @@ const Timeline = () => {
 
       <div className="max-md:hidden flex justify-center items-start mt-14 w-full gap-6">
         <div className="flex flex-col justify-between">
-          <div className="outline mt-20">
+          <div className="mt-20">
             <Step
               stepno="Step 1"
               head="Define your needs"
               desc="Begin by specifying your hiring criteria. We love details - roles, skills, experience level, and expectations."
             />
           </div>
-          <div className="mt-52">
+          <div className="mt-40">
             <Card>
               <div className="flex justify-between p-4 m-4 border-2 border-[#E8E6FF] rounded-[20px] w-[35vw] ">
                 <div className="flex gap-2 items-center flex-shrink-0">
@@ -262,7 +262,7 @@ const Timeline = () => {
               </div>
             </Card>
           </div>
-          <div className="mt-32">
+          <div className="mt-36">
             <Step
               stepno="Step 3"
               head="Select with confidence"
@@ -294,7 +294,7 @@ const Timeline = () => {
           </div>
           <div>
             <img
-              className="mt-1 h-[357px] opacity-20 line rotate-180"
+              className="mt-1 h-[300px] opacity-20 line rotate-180"
               src="Images/timelineHr.svg"
               alt=""
             />
@@ -308,7 +308,7 @@ const Timeline = () => {
           </div>
           <div>
             <img
-              className="mt-1 h-76 opacity-20 line rotate-180"
+              className="mt-1 h-80 opacity-20 line rotate-180"
               src="Images/timelineHr.svg"
               alt=""
             />
@@ -344,14 +344,14 @@ const Timeline = () => {
               </div>
             </Card>
           </div>
-          <div className="mt-24">
+          <div className="mt-36">
             <Step
               stepno="Step 2"
               head="Receive screened profiles"
               desc="We'll provide you with a handful of top-quality profiles, multi-layer screened and vetted from our multi-dimensional aggregated network, perfectly aligned with your job description."
             />
           </div>
-          <div className="flex mt-[250px] justify-center h-56 gap-3">
+          <div className="flex mt-44 justify-center h-56 gap-3">
             <Card>
               <div className="flex flex-col items-center h-60 p-5 px-[27px]">
                 <img className="h-[86px]" src="Images/jasmine.jpg" alt="" />
