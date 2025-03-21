@@ -9,7 +9,7 @@ const Faq = () => {
   return (
     <div id="faqs" className="mt-20 h-auto">
       <div className="text-center">
-        <Heading head="Frequently Asked Questions" />
+        <Heading head="FAQs" />
       </div>
       <div className="mt-10 flex gap-8 w-full">
         <div className="flex flex-col gap-3 md:hidden">

@@ -11,7 +11,7 @@ const Step = (props) => {
         <h3 className="font-roboto md:text-lg text-sm">{props.desc}</h3>
       </div>
       <div className="h-auto md:hidden">
-        <h4 className="font-roboto text-sm font-semibold mt-2 mb-8">
+        <h4 className="font-roboto text-sm font-bold mt-2 mb-8">
           {props.stepno}
         </h4>
         <h1 className="font-poppins text-xl font-semibold">{props.head}</h1>

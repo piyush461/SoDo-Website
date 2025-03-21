@@ -80,7 +80,7 @@ const Testimonials = () => {
 
   return (
     <div className="text-center mt-20">
-      <Heading head="What they say about us" />
+      <Heading head="Hear from our clients" />
       <div className="hoverDiv text-left max-md:-mt-10  md:min-h-[680px] flex justify-center items-center max-md:h-fit">
         <div className="md:hidden w-full">
           <Swiper

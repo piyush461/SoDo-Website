@@ -13,6 +13,10 @@ const ContactUs = () => {
   const form = useRef();
   const submitButton = useRef();
 
+  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const isEmailValid = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
@@ -24,9 +28,9 @@ const ContactUs = () => {
     setIsFormValid(allFieldsFilled && emailValid);
 
     if (allFieldsFilled && emailValid) {
-      submitButton.current.classList.add('animate-contactButton');
+      submitButton.current.classList.add("animate-contactButton");
     } else {
-      submitButton.current.classList.remove('animate-contactButton');
+      submitButton.current.classList.remove("animate-contactButton");
     }
   }, [name, company, email, number, message]);
 
@@ -60,8 +64,8 @@ const ContactUs = () => {
     setMessage("");
 
     toast.promise(
-      emailjs.sendForm("service_qdehk46", "template_6jmdjjh", form.current, {
-        publicKey: "XleSx7EXHqSVDXTmm",
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: EMAILJS_PUBLIC_KEY,
       }),
       {
         pending: "Sending message...",
@@ -72,11 +76,14 @@ const ContactUs = () => {
   };
 
   return (
-    <div id="contact" className="mt-24 h-auto flex justify-between max-md:flex-col">
+    <div
+      id="contact"
+      className="mt-24 h-auto flex justify-between max-md:flex-col">
       <div className="md:w-[35%] mt-4">
         <Heading head="Contact us today" />
-        <h3 className="-mt-3">
-        Ready for your next perfect hire? Reach out to us to explore how SoDo can elevate and support your hiring needs.
+        <h3 className="my-2">
+          Ready for your next perfect hire? Reach out to us to explore how SoDo
+          can elevate and support your hiring needs.
         </h3>
         <ToastContainer
           position="top-right"
@@ -97,7 +104,7 @@ const ContactUs = () => {
           <div className="h-[100%] w-[100%] flex flex-col gap-6">
             <div className="flex flex-wrap font-poppins max-md:flex-col gap-2 md:gap-8">
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg">Name</label>
+                <label className="block md:text-lg ml-1">Name</label>
                 <input
                   name="name"
                   value={name}
@@ -108,7 +115,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg">Company</label>
+                <label className="block md:text-lg ml-1">Company</label>
                 <input
                   name="company"
                   value={company}
@@ -119,7 +126,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg">Business Email</label>
+                <label className="block md:text-lg ml-1">Business email</label>
                 <input
                   name="email"
                   value={email}
@@ -130,7 +137,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg">Phone Number</label>
+                <label className="block md:text-lg ml-1">Contact number</label>
                 <input
                   name="number"
                   value={number}
@@ -142,20 +149,20 @@ const ContactUs = () => {
               </div>
             </div>
             <div className="">
-              <label className="md:text-lg font-poppins block">Message</label>
+              <label className="md:text-lg font-poppins block ml-1">
+                What are you looking forward to hire?
+              </label>
               <textarea
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Write your message..."
-                className="border outline-[#0B99FF] mb-7 mt-2 py-3 md:py-[17px] px-4 text-sm placeholder:text-[#B7B7B7] font-normal h-[95px] resize-none w-full rounded-[7px] md:rounded-[16px]"
-              ></textarea>
+                placeholder="Describe your requirements. . ."
+                className="border outline-[#0B99FF] mb-7 mt-2 py-3 md:py-[17px] px-4 text-sm placeholder:text-[#B7B7B7] font-normal h-[95px] resize-none w-full rounded-[7px] md:rounded-[16px]"></textarea>
               <button
                 type="submit"
                 ref={submitButton}
-                className="submitButton contactButton w-32 h-12 rounded-xl before:rounded-xl text-white bg-black"
-              >
-                Hire Now
+                className="submitButton contactButton w-32 h-12 rounded-xl before:rounded-xl text-white bg-black">
+                Start Hiring
               </button>
             </div>
           </div>

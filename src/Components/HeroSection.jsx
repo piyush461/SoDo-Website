@@ -42,8 +42,8 @@ const HeroSection = () => {
             </h4>
           </div> */}
           <div className="font-poppins">
-            <h1 className="text-[5vw] max-md:text-4xl font-semibold ">Hire Top 1%</h1>
-            <span className="heroHead text-black text-[5vw] block mt-1 max-md:text-4xl text-nowrap">
+            <h1 className="text-[5vw] max-md:text-[8vw] font-semibold ">Hire Top 1%</h1>
+            <span className="heroHead text-black text-[5vw] block mt-1 max-md:text-[8vw] text-nowrap">
               IT & Non-IT Talent
             </span>
           </div>
@@ -54,17 +54,17 @@ const HeroSection = () => {
             <Button content="Hire Talent" />
           </a>
         </div>
-        <div className="flex justify-end pr-7 md:hidden">
-          <div className="relative">
+        <div className="flex max-md:relative justify-end outline md:pr-7 md:hidden">
+          <div className="md:relative outline">
             <img
-              className="h-72 rounded-br-[100px] w-auto"
+              className="w-[70vw] rounded-br-[100px]"
               src="Images\hero.jpg"
               alt=""
             />
             <div className="absolute -left-[60px] bottom-[3vw]">
               <img
-                className="h-24 drop-shadow-md w-auto"
-                src="\Images\numberCard.svg"
+                className="h-24 rounded-[20px] drop-shadow-md w-auto"
+                src="\Images\numberCard.jpg"
                 alt=""
               />
             </div>
@@ -95,10 +95,10 @@ const HeroSection = () => {
             src="Images\hero.jpg"
             alt=""
           />
-          <div className="absolute -left-28 bottom-[2vw]">
+          <div className="absolute -left-36 bottom-[2vw]">
             <img
-              className="h-[13vw] w-auto drop-shadow-lg"
-              src="\Images\numberCard.png"
+              className="h-[13vw] w-auto rounded-[20px] drop-shadow-lg"
+              src="\Images\numberCard.jpg"
               alt=""
             />
           </div>

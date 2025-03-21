@@ -38,9 +38,9 @@ const Timeline = () => {
   return (
     <div className="mt-12" id="timeline">
       <div className="text-center">
-        <Heading head="Our Process" />
+        <Heading head="How it works?" />
       </div>
-      <div className="md:hidden flex justify-center items-start mt-8 md:w-full gap-6">
+      <div className="md:hidden flex justify-center items-start mt-8 md:w-full gap-3">
         <div className="flex min-w-7 flex-col gap-2 items-center">
           <div>
             <img
@@ -85,10 +85,10 @@ const Timeline = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-between gap-20">
+        <div className="flex flex-col justify-between  gap-20">
           <div className="flex flex-col justify-center gap-6">
             <Step
-              stepno="STEP 1"
+              stepno="Step 1"
               head="Define your needs"
               desc="Begin by specifying your hiring criteria. We love details - roles, skills, experience level, and expectations."
             />
@@ -111,18 +111,18 @@ const Timeline = () => {
                   </div>
                 </div>
                 <div className="flex flex-wrap w-[100%]">
-                  <Badge text="User Interface Design" color="#e6f0ff" />
-                  <Badge text="Digital Artwork" color="#e6f0ff" />
-                  <Badge text="Visual Communication" color="#e6f0ff" />
-                  <Badge text="Brand Identity Design" color="#e6f0ff" />
-                  <Badge text="Motion Graphics Production" color="#e6f0ff" />
+                  <Badge text="User Interface Design" color="#4085FB" />
+                  <Badge text="Visual Communication" color="#4085FB" />
+                  <Badge text="Digital Artwork" color="#4085FB" />
+                  <Badge text="Brand Identity Design" color="#4085FB" />
+                  <Badge text="Motion Graphics Production" color="#4085FB" />
                 </div>
               </div>
             </Card>
           </div>
-          <div className="flex flex-col justify-center gap-6">
+          <div className="flex flex-col justify-center mt-5 gap-6">
             <Step
-              stepno="STEP 2"
+              stepno="Step 2"
               head="Receive screened profiles"
               desc="We'll provide you with a handful of top-quality profiles, multi-layer screened and vetted from our multi-dimensional aggregated network, perfectly aligned with your job description."
             />
@@ -166,15 +166,15 @@ const Timeline = () => {
               </div>
             </Card>
           </div>
-          <div className="flex flex-col justify-center gap-6">
+          <div className="flex flex-col mt-6 justify-center gap-6">
             <Step
-              stepno="STEP 3"
+              stepno="Step 3"
               head="Select with confidence"
               desc="Schedule interviews with your preferred talent or resources and trust SoDo for end-to-end HR support for a smooth and productive recruitment experience."
             />
 
             <div className="flex justify-center">
-              <div className="w-full px-5">
+              <div className="w-[70%] pr-3">
                 <Card>
                   <div className="flex flex-col items-center gap-1 h-32 py-2">
                     <img className="h-[38px]" src="Images/jasmine.jpg" alt="" />
@@ -193,7 +193,7 @@ const Timeline = () => {
               <Card>
                 <div className="overflow-hidden h-32 relative">
                   <img
-                    className="scale-95  absolute top-4"
+                    className="scale-95 absolute top-4"
                     src="Images/graph1.svg"
                     alt=""
                   />
@@ -213,7 +213,7 @@ const Timeline = () => {
         <div className="flex flex-col justify-between">
           <div>
             <Step
-              stepno="STEP 1"
+              stepno="Step 1"
               head="Define your needs"
               desc="Begin by specifying your hiring criteria. We love details - roles, skills, experience level, and expectations."
             />
@@ -264,7 +264,7 @@ const Timeline = () => {
           </div>
           <div className="mt-32">
             <Step
-              stepno="STEP 3"
+              stepno="Step 3"
               head="Select with confidence"
               desc="Schedule interviews with your preferred talent or resources and trust SoDo for end-to-end HR support for a smooth and productive recruitment experience."
             />
@@ -315,7 +315,7 @@ const Timeline = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div>
+          <div className="mt-12">
             <Card>
               <div className="flex flex-col gap-9 p-7 w-[39vw]">
                 <div className="flex justify-between">
@@ -335,18 +335,18 @@ const Timeline = () => {
                   </div>
                 </div>
                 <div className="flex flex-wrap w-[100%]">
-                  <Badge text="User Interface Design" color="#e6f0ff" />
-                  <Badge text="Visual Communication" color="#e6f0ff" />
-                  <Badge text="Digital Artwork" color="#e6f0ff" />
-                  <Badge text="Brand Identity Design" color="#e6f0ff" />
-                  <Badge text="Motion Graphics Production" color="#e6f0ff" />
+                  <Badge text="User Interface Design" color="#4085FB" />
+                  <Badge text="Visual Communication" color="#4085FB" />
+                  <Badge text="Digital Artwork" color="#4085FB" />
+                  <Badge text="Brand Identity Design" color="#4085FB" />
+                  <Badge text="Motion Graphics Production" color="#4085FB" />
                 </div>
               </div>
             </Card>
           </div>
           <div className="mt-24">
             <Step
-              stepno="STEP 2"
+              stepno="Step 2"
               head="Receive screened profiles"
               desc="We'll provide you with a handful of top-quality profiles, multi-layer screened and vetted from our multi-dimensional aggregated network, perfectly aligned with your job description."
             />

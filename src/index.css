@@ -16,8 +16,8 @@ body {
   font-family: Roboto;
 }
 
-*{
-  color: #1D2434;
+* {
+  color: #1d2434;
 }
 
 .roboto-light {
@@ -254,7 +254,7 @@ body {
 
 .heroHead {
   font-weight: bold;
-  background-image: linear-gradient(to right, #3370FB, #5E58FB , #8840FB);
+  background-image: linear-gradient(to right, #3370fb, #5e58fb, #8840fb);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -280,10 +280,10 @@ body {
   background-image: conic-gradient(
     from var(--angle),
     transparent 75%,
-    #8B42F6,
-    #8B42F6,
-    #BD63A3,
-    #BD63A3,
+    #8b42f6,
+    #8b42f6,
+    #bd63a3,
+    #bd63a3,
     #fb8b40,
     #fb8b40
   );
@@ -292,7 +292,7 @@ body {
   translate: -50% -50%;
   z-index: -1;
   border-radius: 12px;
-  
+
   opacity: 0;
 }
 
@@ -328,24 +328,13 @@ body {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  background-image: conic-gradient(
-    from -80deg,
-    #FB8B40,
-    #8840FB,
-    #FB8B40
-  );
-  border-radius: 18px;
+  background-image: conic-gradient(from -80deg, #3370fb, #5e58fb, #8840fb);
+  border-radius: 24px;
 }
 
 .thHr {
-  background: linear-gradient(
-    to left,
-    #3370FB,
-    #8840FB,
-    #FB8B40
-  );
+  background: linear-gradient(to left, #3370fb, #8840fb, #fb8b40);
 }
-
 
 /* %%%%%%%%%%%%%%%%%%%%%% OUR SERVICE SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
@@ -363,7 +352,7 @@ body {
   height: calc(100% + 4px);
   width: calc(100% + 4px);
   z-index: -1;
-  background-image: conic-gradient(from -90deg, #FB8B40, #8840FB, #FB8B40);
+  background-image: conic-gradient(from -90deg, #3370fb, #5e58fb, #8840fb);
 }
 
 .learnMore:hover img {
@@ -372,10 +361,8 @@ body {
 }
 
 .coverCard {
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 20px;
 }
-
 /* %%%%%%%%%%%%%%%%%%%%%%%% FOR IT STARTUPS MNCS SECTION %%%%%%%%%%%%%%%%%%%%%%%% */
 
 .rotateBall {
@@ -406,13 +393,14 @@ body {
 }
 
 .bordergradient {
-  transition:  all 0.5s ease;;
+  transition: all 0.5s ease;
 }
-
 
 .gradientBorder {
   background-image: conic-gradient(
-    from var(--angle), #FB8B40 30%, #8840FB, #FB8B40);
+    from var(--angle),
+    #3370fb, #5e58fb, #8840fb
+  );
   animation: spin 2s infinite;
   animation-timing-function: cubic-bezier(1, 1, 1, 1);
 }
@@ -551,18 +539,15 @@ body {
 /* %%%%%%%%%%%%%%%%%%%%%%% CONTACT US SECTION %%%%%%%%%%%%%%%%%%%%%%% */
 
 .contactForm {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 20px;
 }
 
-.contactButton{
+.contactButton {
   position: relative;
 }
 
-
-
-.contactButton::before{
-  content: '';
+.contactButton::before {
+  content: "";
   height: 107%;
   width: 104%;
   position: absolute;
@@ -570,11 +555,23 @@ body {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  background-image: conic-gradient(from var(--angle), #8840FB, #FB8B40, #FB8B40, #8840FB);
+  background-image: conic-gradient(
+    from var(--angle),
+    #8840fb,
+    #fb8b40,
+    #fb8b40,
+    #8840fb
+  );
 }
 
-.animate-contactButton::before{
-  background-image: conic-gradient(from var(--angle),transparent 75%,  #FB8B40, #FB8B40, #8840FB );
+.animate-contactButton::before {
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 75%,
+    #fb8b40,
+    #fb8b40,
+    #8840fb
+  );
   animation: spin 1.5s linear infinite;
   animation-delay: -200s;
 }
@@ -619,9 +616,12 @@ body {
     transform-origin: center;
     opacity: 100%;
   }
+  20%{
+    opacity: 0%;
+  }
   30% {
     transform: translateY(7px) rotate(0deg);
-    opacity: 10%;
+    opacity: 0%;
   }
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -635,9 +635,12 @@ body {
     transform-origin: center;
     opacity: 100%;
   }
+  10%{
+    opacity: 0%;
+  }
   30% {
     transform: translateY(-7px) rotate(0deg);
-    opacity: 10%;
+    opacity: 0%;
   }
   100% {
     transform: translateY(0px) rotate(0deg);

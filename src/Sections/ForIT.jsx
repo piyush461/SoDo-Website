@@ -46,12 +46,12 @@ const ForIT = () => {
   return (
     <div
       id="forIT"
-      className="flex justify-between gap-4 w-full max-md:flex-col mt-20">
-      <div className="flex md:flex-col justify-between max-md:items-center">
-        <div className="flex flex-col gap-3 md:gap-6">
+      className="flex justify-between gap-4 w-full items-center max-md:flex-col mt-20">
+      <div className="flex md:flex-col md:justify-center max-md:w-full justify-between md:gap-24 max-md:items-center">
+        <div className="flex flex-col gap-1 md:gap-6 flex-1">
           <h3
             ref={itRef}
-            className="font-poppins md:text-[3.4vw] text-xl font-semibold flex items-center text-nowrap relative text-[#464454]">
+            className="font-poppins md:text-[2.7vw] text-[15px] font-semibold flex items-center text-nowrap relative text-[#464454]">
             For MNCs
             <div className="pl-3 pt-2">
               <img
@@ -65,7 +65,7 @@ const ForIT = () => {
           </h3>
           <h3
             ref={startupRef}
-            className="font-poppins md:text-[3.4vw] text-xl font-semibold flex items-center text-[#464454]">
+            className="font-poppins md:text-[2.7vw] text-[15px] font-semibold flex items-center text-[#464454]">
             For Enterprises
             <div className="pl-3 pt-2">
               <img
@@ -79,8 +79,8 @@ const ForIT = () => {
           </h3>
           <h3
             ref={mncsRef}
-            className="font-poppins md:text-[3.4vw] text-xl font-semibold flex items-center text-[#464454]">
-            For Startups
+            className="font-poppins md:text-[2.7vw] text-[15px] font-semibold flex items-center text-[#464454]">
+            For Companies & Startups
             <div className="pl-3 pt">
               <img
                 ref={gradball3Ref}
@@ -100,7 +100,7 @@ const ForIT = () => {
                 contactSection.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="md:learnMore flex items-center border mb-6 font-semibold px-6 py-3 rounded-2xl max-md:px-3 max-md:py-2 max-md:text-sm hover:text-black">
+            className="md:learnMore flex-1 flex items-center border mb-6 font-semibold px-6 py-3 rounded-2xl max-md:px-3 max-md:py-1 max-md:text-xs text-nowrap hover:text-black">
             Learn More
             <img src="Images/rightArrow.svg" alt="" />
           </button>

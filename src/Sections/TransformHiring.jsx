@@ -12,9 +12,9 @@ const TransformHiring = () => {
           />
         </div>
         <div className="flex justify-between">
-          <div className="w-[100%] h-80 max-md:hidden"></div>
+          <div className="w-[80%] h-80 outline max-md:hidden"></div>
           <div className="w-[100%]">
-            <h2 className="font-roboto md:text-[2vw] -ml-5 text-md">{desc}</h2>
+            <h2 className="md:text-[14px] font-light text-[#1F2937] font-poppins ml-3 text-md">{desc}</h2>
           </div>
         </div>
       </div>
