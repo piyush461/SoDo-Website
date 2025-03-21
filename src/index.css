@@ -616,7 +616,7 @@ body {
     transform-origin: center;
     opacity: 100%;
   }
-  20%{
+  10%{
     opacity: 0%;
   }
   30% {
