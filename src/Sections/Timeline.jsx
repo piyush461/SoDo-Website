@@ -211,7 +211,7 @@ const Timeline = () => {
 
       <div className="max-md:hidden flex justify-center items-start mt-14 w-full gap-6">
         <div className="flex flex-col justify-between">
-          <div>
+          <div className="outline mt-20">
             <Step
               stepno="Step 1"
               head="Define your needs"
@@ -315,7 +315,7 @@ const Timeline = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="mt-12">
+          <div className="mt-16">
             <Card>
               <div className="flex flex-col gap-9 p-7 w-[39vw]">
                 <div className="flex justify-between">
