@@ -2,6 +2,9 @@ import { useRef, useState, useEffect } from "react";
 import Heading from "../Components/Heading";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, Bounce, toast } from "react-toastify";
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -12,10 +15,7 @@ const ContactUs = () => {
   const [isFormValid, setIsFormValid] = useState(false);
   const form = useRef();
   const submitButton = useRef();
-
-  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  console.log(EMAILJS_PUBLIC_KEY)
 
   const isEmailValid = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
