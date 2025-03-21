@@ -92,7 +92,7 @@ const Testimonials = () => {
             className="w-full relative max-w-4xl m-10">
             {testimonialsData.testimonials.map((testimonial, index) => (
               <SwiperSlide key={index} className="flex justify-center">
-                <div className="gradientBorder w-fit max-md:w-full p-[2px] rounded-2xl">
+                <div className="gradientBorder w-fit max-md:w-full p-[2px] rounded-[24px]">
                   <TestimonialCard
                     desc={testimonial.desc}
                     imgUrl={testimonial.imgUrl}

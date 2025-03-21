@@ -54,8 +54,8 @@ const HeroSection = () => {
             <Button content="Hire Talent" />
           </a>
         </div>
-        <div className="flex relative max-md:relative justify-end outline md:pr-7 md:hidden">
-          <div className="outline">
+        <div className="flex relative max-md:relative justify-end md:pr-7 md:hidden">
+          <div>
             <img
               className="w-[70vw] rounded-br-[100px]"
               src="Images\hero.jpg"

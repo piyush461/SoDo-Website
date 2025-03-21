@@ -115,7 +115,7 @@ const ContactUs = () => {
           <div className="h-[100%] w-[100%] flex flex-col gap-6">
             <div className="flex flex-wrap font-poppins max-md:flex-col gap-2 md:gap-8">
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-1">Name</label>
+                <label className="block md:text-lg text-sm ml-1">Name</label>
                 <input
                   name="name"
                   value={name}
@@ -126,7 +126,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-1">Company</label>
+                <label className="block md:text-lg text-sm ml-1">Company</label>
                 <input
                   name="company"
                   value={company}
@@ -137,7 +137,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-1">Business email</label>
+                <label className="block md:text-lg text-sm ml-1">Business email</label>
                 <input
                   name="email"
                   value={email}
@@ -148,7 +148,7 @@ const ContactUs = () => {
                 />
               </div>
               <div className="h-fit md:w-[44%]">
-                <label className="block md:text-lg ml-1">Contact number</label>
+                <label className="block md:text-lg text-sm ml-1">Contact number</label>
                 <input
                   name="number"
                   value={number}
@@ -160,7 +160,7 @@ const ContactUs = () => {
               </div>
             </div>
             <div className="">
-              <label className="md:text-lg font-poppins block ml-1">
+              <label className="md:text-lg text-sm font-poppins block ml-1">
                 What are you looking forward to hire?
               </label>
               <textarea

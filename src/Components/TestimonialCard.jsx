@@ -1,6 +1,6 @@
 const TestimonialCard = ({ id, desc, imgUrl, name, company }) => {
   return (
-    <div className="testimonialCard bg-white p-4 rounded-[13px] before:rounded-2xl w-[25vw] h-[255px] flex flex-col justify-between pb-4 max-md:w-full max-md:h-72">
+    <div className="testimonialCard bg-white p-4 rounded-[24px] before:rounded-[24px] w-[25vw] h-[255px] flex flex-col justify-between pb-4 max-md:w-full max-md:h-72">
       <div className="-mt-4 ">
         <img src="Images/quote.svg" alt="Quote" className="w-8 h-8" />
       </div>

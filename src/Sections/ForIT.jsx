@@ -107,7 +107,7 @@ const ForIT = () => {
         </div>
       </div>
       <div>
-        <img className="md:h-[38vw] w-auto" src="Images/forIT.jpg" alt="" />
+        <img className="md:h-[38vw] max-md:mt-3 w-auto" src="Images/forIT.jpg" alt="" />
       </div>
     </div>
   );

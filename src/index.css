@@ -582,9 +582,9 @@ body {
     transform: rotate(0deg);
     opacity: 100%;
   }
-  30% {
+  10% {
     transform: translateY(7px) rotate(0deg);
-    opacity: 30%;
+    opacity: 0%;
   }
   100% {
     transform: translateY(6px) rotate(-45deg);
@@ -599,9 +599,9 @@ body {
     transform: rotate(0deg);
     opacity: 100%;
   }
-  30% {
+  10% {
     transform: translateY(-7px) rotate(0deg);
-    opacity: 30%;
+    opacity: 0%;
   }
   100% {
     transform: translateY(-8px) rotate(45deg);
