@@ -11,13 +11,13 @@ const Header = ({ isOpen, setIsOpen }) => {
         <div className="flex gap-4 font-poppins text-md">
           <img className="mr-8 " src="Images/logo.svg" alt="Logo" />
           <h2 className="navs max-md:hidden mt-1 text-black">
-            <a href="#companies">For MNCs</a>
+            For MNCs
           </h2>
           <h2 className="navs mt-1 text-black max-md:hidden">
-            <a href="#mncs">For Enterprises</a>
+            For Enterprises
           </h2>
           <h2 className="navs mt-1 text-black max-md:hidden">
-            <a href="#startups">For Companies</a>
+            For Companies
           </h2>
         </div>
         <div className="md:hidden h-fit w-7">

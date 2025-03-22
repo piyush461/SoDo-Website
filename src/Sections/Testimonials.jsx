@@ -81,7 +81,7 @@ const Testimonials = () => {
   return (
     <div className="text-center mt-16 md:mt-24">
       <Heading head="Hear from our clients" />
-      <div className="hoverDiv text-left max-md:-mt-10  md:min-h-[680px] flex justify-center items-center max-md:h-fit">
+      <div className="hoverDiv text-left max-md:-mt-10 mt-2 md:min-h-[680px] flex justify-center items-center max-md:h-fit">
         <div className="md:hidden w-full">
           <Swiper
             slidesPerView={1}

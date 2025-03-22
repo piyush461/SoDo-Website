@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import PrivacyPolicy from "./PrivacyPolicy";
 
 const Footer = () => {
   const handleSmoothScroll = (e, sectionId) => {
@@ -23,50 +22,35 @@ const Footer = () => {
               />
             </div>
             <div className="h-12">
-              <img
-                className="h-[100%] ml-2"
-                src="Images/msForstartupLogo.svg"
-                alt=""
-              />
+              <img className="h-[100%] ml-2" src="Images/msForstartupLogo.svg" alt="" />
             </div>
           </div>
           <div className="h-16 relative -left-9 -top-8 max-md:hidden">
-            <img
-              className="h-24 object-contain"
-              src="Images/sodo.svg"
-              alt="SoDo logo"
-            />
+            <img className="h-24 object-contain" src="Images/sodo.svg" alt="SoDo logo" />
           </div>
           <div className="h-20 max-md:hidden">
-            <img
-              className="h-[100%]"
-              src="Images/Microsoft.jpg"
-              alt=""
-            />
+            <img className="h-[100%]" src="Images/Microsoft.jpg" alt="" />
           </div>
-          <div className="flex justify-between w-full mt-6 items-center max-md:hidden">
+          <div className="flex justify-between ml-5 w-full mt-6 items-center max-md:hidden">
             <div>
-              <a
-                className="h-[150%]"
-                href="https://www.linkedin.com/company/sodohire"
-                target="_blank">
-                <img src="Images/linkedIn.svg" alt="" />
-              </a>
+              <Link to="https://www.linkedin.com/company/sodohire" target="_blank">
+                <img className="scale-150" src="Images/linkedIn.svg" alt="" />
+              </Link>
             </div>
             <div>
-              <a href="https://www.facebook.com/sodorecruit/" target="_blank">
-                <img src="Images/instagram.svg" alt="" />
-              </a>
+              <Link to="https://www.facebook.com/sodorecruit/" target="_blank">
+                <img className="scale-150" src="Images/instagram.svg" alt="" />
+              </Link>
             </div>
             <div>
-              <a href="https://x.com/SoDoHire" target="_blank">
-                <img src="Images/x.svg" alt="X" />
-              </a>
+              <Link to="https://x.com/SoDoHire" target="_blank">
+                <img className="scale-150" src="Images/x.svg" alt="X" />
+              </Link>
             </div>
             <div>
-              <a href="https://www.instagram.com/sodohire" target="_blank">
-                <img src="Images/fb.svg" alt="" />
-              </a>
+              <Link to="https://www.instagram.com/sodohire" target="_blank">
+                <img className="scale-150" src="Images/fb.svg" alt="" />
+              </Link>
             </div>
           </div>
         </div>
@@ -75,25 +59,15 @@ const Footer = () => {
           <div className="flex justify-between ml-2">
             <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
               <h3 className="text-black mb-1 font-semibold">Learn More</h3>
-              <h3>
-                <a href="#faqs" onClick={(e) => handleSmoothScroll(e, "faqs")}>
-                  FAQs
-                </a>
-              </h3>
-              <h3>
-                <a
-                  href="#ourServices"
-                  onClick={(e) => handleSmoothScroll(e, "ourServices")}>
-                  Services
-                </a>
-              </h3>
-              <h3>
-                <a
-                  href="#ourModels"
-                  onClick={(e) => handleSmoothScroll(e, "ourModels")}>
-                  Pricing
-                </a>
-              </h3>
+              <Link className="!text-[#464454]" to="#faqs" onClick={(e) => handleSmoothScroll(e, "faqs")}>
+                FAQs
+              </Link>
+              <Link className="hover:text-black" to="#ourServices" onClick={(e) => handleSmoothScroll(e, "ourServices")}>
+                Services
+              </Link>
+              <Link to="#ourModels" onClick={(e) => handleSmoothScroll(e, "ourModels")}>
+                Pricing
+              </Link>
             </div>
             <div className="text-xs text-[#464454] font-[500] flex flex-col gap-1">
               <h3 className="text-black mb-1 font-semibold">Resources</h3>
@@ -105,15 +79,13 @@ const Footer = () => {
             <div className="text-xs text-[#464454] font-[500] mt-6 flex flex-col gap-1">
               <h3 className="text-black mb-1 font-semibold">Contact Us</h3>
               <h3>HQ OFFICE</h3>
-              <h3>
-                20A, Faridabad, Haryana 121002 202, 2nd Floor, EF3 Mall, Sector
-              </h3>
+              <h3>20A, Faridabad, Haryana 121002 202, 2nd Floor, EF3 Mall, Sector</h3>
             </div>
             <h3 className="text-xs text-[#464454] mt-3 font-[500]">
-              +91 9717717297
+              <Link to="tel:+919717717297">+91 9717717297</Link>
             </h3>
             <h3 className="text-xs text-[#464454] mt-2 font-[500]">
-              official@sodoservices.com
+              <Link to="mailto:official@sodoservices.com">official@sodoservices.com</Link>
             </h3>
           </div>
         </div>
@@ -121,25 +93,9 @@ const Footer = () => {
         <div className="flex gap-24 max-md:hidden">
           <div className="text-[14px] text-[#464454] font-[500] flex flex-col gap-1">
             <h3 className="text-black mb-2">Learn More</h3>
-            <h3>
-              <a href="#faqs" onClick={(e) => handleSmoothScroll(e, "faqs")}>
-                FAQs
-              </a>
-            </h3>
-            <h3>
-              <a
-                href="#ourServices"
-                onClick={(e) => handleSmoothScroll(e, "ourServices")}>
-                Services
-              </a>
-            </h3>
-            <h3>
-              <a
-                href="#ourModels"
-                onClick={(e) => handleSmoothScroll(e, "ourModels")}>
-                Pricing
-              </a>
-            </h3>
+            <Link to="#faqs" onClick={(e) => handleSmoothScroll(e, "faqs")}>FAQs</Link>
+            <Link to="#ourServices" onClick={(e) => handleSmoothScroll(e, "ourServices")}>Services</Link>
+            <Link to="#ourModels" onClick={(e) => handleSmoothScroll(e, "ourModels")}>Pricing</Link>
           </div>
           <div className="text-[14px] text-[#464454] font-[500] flex flex-col gap-1">
             <h3 className="text-black mb-2 font-semibold">Resources</h3>
@@ -150,40 +106,40 @@ const Footer = () => {
             <div className="text-[14px] text-[#464454] font-[500] flex flex-col gap-1">
               <h3 className="text-black mb-2 font-semibold">Contact Us</h3>
               <h3 className="mb-2">HQ OFFICE</h3>
-              <h3>
-                202, 2nd Floor, EF3 Mall, Sector 20A, Faridabad, Haryana 121002.
-              </h3>
+              <h3>202, 2nd Floor, EF3 Mall, Sector 20A, Faridabad, Haryana 121002.</h3>
             </div>
-            <h3 className="text-[14px] mt-3 font-[500]">+91 9717717297</h3>
+            <h3 className="text-[14px] mt-3 font-[500]">
+              <Link to="tel:+919717717297">+91 9717717297</Link>
+            </h3>
             <h3 className="text-[14px] mt-2 font-[500]">
-              official@sodoservices.com
+              <Link to="mailto:official@sodoservices.com">official@sodoservices.com</Link>
             </h3>
           </div>
         </div>
       </div>
       <div className="flex gap-4 mt-6 items-center justify-center my-4 md:hidden">
         <div>
-          <a href="https://www.linkedin.com/company/sodohire" target="_blank">
+          <Link to="https://www.linkedin.com/company/sodohire" target="_blank">
             <img src="Images/linkedIn.svg" alt="" />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="https://www.facebook.com/sodorecruit/" target="_blank">
+          <Link to="https://www.facebook.com/sodorecruit/" target="_blank">
             <img src="Images/instagram.svg" alt="" />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="https://x.com/SoDoHire" target="_blank">
+          <Link to="https://x.com/SoDoHire" target="_blank">
             <img src="Images/x.png" alt="X" />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="https://www.instagram.com/sodohire" target="_blank">
+          <Link to="https://www.instagram.com/sodohire" target="_blank">
             <img src="Images/fb.svg" alt="" />
-          </a>
+          </Link>
         </div>
       </div>
-      <div className="thHr h-[1px] w-full mt-6"></div>
+      <div className="thHr h-[2px] w-full mt-6"></div>
       <div className="flex items-center justify-center font-poppins h-14 font-[500] text-sm max-md:hidden">
         © 2025 | SoDoBusiness Tech Private Limited | All Rights Reserved
       </div>

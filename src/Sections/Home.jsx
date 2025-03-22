@@ -13,6 +13,9 @@ import OurModels from './OurModels.jsx';
 import Faq from './Faq.jsx';
 import ContactUs from "./ContactUs.jsx";
 import Footer from "./Footer.jsx";
+import CompaniesWeWorkWith from "./CompaniesWeWorkWith.jsx";
+import OurFounder from "./OurFounder.jsx";
+import OurRecognitions from "./OurRecognitions.jsx";
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +32,10 @@ function Home() {
         <WhatWeCover />
         <Timeline />
         <Testimonials />
+        <CompaniesWeWorkWith/>
         <OurModels />
+        <OurFounder/>
+        <OurRecognitions/>
         <Faq />
         <ContactUs />
         <Footer />

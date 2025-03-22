@@ -70,23 +70,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className=" gap-6 bg-white mix-blend-multiply hidden">
-          <div>
-            <img className="h-11 max-md:h-7 w-auto" src="Images\ClientLogo1.webp" alt="" />
-          </div>
-          <div>
-            <img className="h-11 max-md:h-7 w-auto" src="Images\ClientLogo2.webp" alt="" />
-          </div>
-          <div>
-            <img className="h-11 max-md:h-7 w-auto" src="Images\clientLogo3.png" alt="" />
-          </div>
-          <div>
-            <img className="h-11 max-md:h-7 w-auto" src="Images\clientLogo4.svg" alt="" />
-          </div>
-          <div>
-            <img className="h-11 max-md:h-7 w-auto" src="Images\ClientLogo5.webp" alt="" />
-          </div>
-        </div>
       </div>
       <div className="flex justify-end max-md:hidden">
         <div className="relative">

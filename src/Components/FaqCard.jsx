@@ -14,7 +14,7 @@ const FaqCard = ({ isOpen, toggleOpen, question, answer }) => {
 
   return (
     <div
-      className={`faqBorder shadow-[10px] rounded-[24px] h-fit w-full`}>
+      className={`faqBorder shadow-sm rounded-[24px] h-fit w-full`}>
       <div className="h-auto bg-white rounded-[22px] px-4 py-[26px] transition-all ease-out">
         <div className="flex justify-between">
           <h1 className="font-poppins w-[92%] md:text-[1.3vw] text-[14px] font-[500]">{question}</h1>
