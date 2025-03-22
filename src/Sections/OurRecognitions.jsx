@@ -4,7 +4,7 @@ import Heading from "../../src/Components/Heading";
 const recognitions = [
   { img: "Images/Recog1.webp", link: "https://www.linkedin.com/posts/inc42_entrepreneurs-zomato-leadership-activity-7148256005691195392-z0Fh/" },
   { img: "Images/Recog2.svg", link: "https://yourstory.com/2020/11/supreme-incubator-startups-bootstrapped-growth" },
-  { img: "Images/Recog3.png", link: "" },
+  { img: "Images/Recog3.png", link: "https://www.linkedin.com/posts/thebuildersclub_roadtosummit2024-tbcsummit2024-thebuildersclub-activity-7217384832257990656-rIg-?utm_source=share&utm_medium=member_desktop&rcm=ACoAABS1-qEBQiZq5Gcmhg56v-cnIt_L8hWttxU" },
   { img: "Images/Recog4.jpg", link: "" },
   { img: "Images/Recog5.jpg", link: " https://www.supremeincubator.com/demoday" },
   { img: "Images/Recog6.png", link: "https://thedailyguardian.com/india/when-budding-startups-share-innovative-ideas-with-panellists/amp/" },
